@@ -1,0 +1,49 @@
+/* Styling of engagebay forms. */
+
+.engagebay-forms {
+  display: flex;
+  padding: 0 !important;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-left: 5px solid #57bdeb;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.engagebay-forms .form {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Nunito Sans' !important;
+  box-shadow: none;
+  background-color: transparent;
+  width: 500px;
+}
+
+.engagebay-forms .form .form-content {
+  padding: 20px;
+}
+
+.engagebay-forms .form-group .control-label {
+  font-weight: 600 !important;
+}
+
+.engagebay-forms select.form-control {
+  height: 37px;
+}
+
+.engagebay-forms .form .form-group {
+  margin-bottom: 20px !important;
+}
+
+.engagebay-forms .form .submit-btn {
+  border: none;
+  color: #fff;
+  background-color: #005598;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.engagebay-forms .form .submit-btn:hover {
+  background-color: #005598cc;
+}

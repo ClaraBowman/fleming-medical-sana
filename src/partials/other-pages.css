@@ -1,0 +1,140 @@
+/* A catch-all for other pages not given their own stylesheet */
+
+/* Customer Resources Page */
+.resources .heading {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.resources .heading i {
+  width: 40px;
+}
+
+.resources .heading i,
+.resources .heading h2 {
+  color: var(--fm-blue);
+  font-size: 1.8em;
+}
+
+.resources .heading h2 {
+  font-weight: 600;
+}
+
+.resources h3,
+.resources .heading h2 {
+  text-transform: none;
+  letter-spacing: unset;
+}
+
+.resources h3 {
+  font-size: 1.4em;
+}
+
+.resources .accordion-section {
+  padding-bottom: 15px;
+}
+
+.resources .accordion-header .btn-show-hide {
+  border: 3px solid var(--fm-lightblue) !important;
+}
+
+.resources .accordion a {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* News Pages */
+#newsOverviewPage,
+#newsPage {
+  font-size: 16px;
+}
+
+#newsPage h2 {
+  font-size: 20px;
+}
+
+.news-item-page figure {
+  margin: 0;
+  padding: 5px;
+}
+
+.news-item-page figcaption {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.news-banner {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.2s;
+}
+
+.news-banner:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.news-flex-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-flex-col a {
+  padding: 10px;
+}
+
+.news-flex-col a:hover {
+  text-decoration: none;
+}
+
+.list-news li a {
+  display: inline;
+}
+
+.list-news .news-date {
+  display: block;
+}
+
+/* Product pages */
+.product-details-page .attachments .gvi-name-value .name {
+  width: 100%;
+}
+
+.product-list-intro {
+  margin-bottom: 30px;
+}
+
+.product-list-intro .heading-lowercase {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+#productPage div[itemprop="description"]::after {
+  content: "...";
+}
+
+/* UK About Page */
+#uk-about-txt {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#uk-about-txt-img {
+  flex: 0 0 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #uk-about-txt {
+    flex-wrap: nowrap;
+  }
+  #uk-about-txt-img {
+    flex: 0 0 45%;
+  }
+}

@@ -1,0 +1,23 @@
+/* External stylesheets */
+@import 'swiper/swiper-bundle.css';
+
+/* Variables accessible to all stylesheets */
+:root {
+    --fm-blue: #005598;
+    --fm-lightblue: #6fb9e1;
+    --fm-blue-trans: #005598bb;
+    --fm-lightblue-trans: #6fb9e1bb;
+}
+
+/* Import all custom stylesheets */
+@import './partials/categories.css';
+@import './partials/footer.css';
+@import './partials/forms.css';
+@import './partials/general.css';
+@import './partials/home.css';
+@import './partials/legacy.css';
+@import './partials/other-pages.css';
+@import './partials/lifesense-app.css';
+@import './partials/my-account.css';
+@import './partials/sliders.css';
+@import './partials/strip-banners.css';

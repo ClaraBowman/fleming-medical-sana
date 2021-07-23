@@ -1,0 +1,91 @@
+/* Styles specific to the homepage */
+
+/* Homepage Slider */
+.lSSlideWrapper img:not(.nav) {
+    border-bottom: 10px solid var(--fm-lightblue);
+}
+
+.title-text-block {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    transform: none !important;
+    top: initial !important;
+    left: initial !important;
+    bottom: 18px;
+    margin-right: initial !important;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ecb-imageslider .title-text-block h2.slider-title {
+    margin-bottom: 5px;
+    font-size: 28px;
+    line-height: 1.2em;
+}
+
+.ecb-imageslider .title-text-block div:nth-child(2) {
+    font-size: 16px;
+}
+
+.ecb-imageslider .lSAction > a {
+    top: 45%;
+}
+
+.lSNext, .lSPrev {display: none !important;}
+
+.lSpg {padding-top: 10px !important;}
+
+@media screen and (min-width: 768px) {
+    .ecb-imageslider .title-text-block h2.slider-title {
+        margin-bottom: 10px;
+        font-size: 42px;
+    }
+
+    .ecb-imageslider .title-text-block div:nth-child(2) {
+        font-size: 22px;
+        margin-bottom: 10px;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lSSlideWrapper {
+        border-bottom-width: 10px;
+    }
+
+    .title-text-block {
+        max-width: 920px;
+        min-height: 230px;
+        padding: 30px;
+        background-color: rgba(0, 105, 170, 0.6);
+        border-right: 5px solid var(--fm-lightblue);
+        background-image: none;
+        left: 0 !important;
+        bottom: 80px;
+        padding-left: 10% !important;
+    }
+}
+
+/* Fix for slider images on ultrawide displays */
+@media (min-aspect-ratio: 20/9) {
+    #content-slider li:nth-child(1) img,
+    #content-slider li:nth-child(3) img,
+    #content-slider li:nth-child(5) img {
+        object-position: 50% 25%;
+    } 
+}
+
+@media screen and (max-width: 639px) {
+    .logo img {
+        max-height: 42px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .lSNext, .lSPrev {
+        display: block !important;
+    }
+}
+

@@ -1,0 +1,204 @@
+/* Legacy CSS to gradually clean up */
+
+/* NAVIGATION */
+.nav-item-root.selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*ADD BOX SHADOW TO FLEXI TILES*/
+.col-4.flex-tile-block:hover{box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);}
+
+/*CHANGE PRODUCT CODES TO UPPERCASE FOR EVERYTHING*/
+.product-id-value{text-transform: uppercase;}
+[itemprop="productID"] {text-transform: uppercase;}
+[itemprop="name"] {text-transform: uppercase;}
+
+/*MOBILE FLEXI TILES ON CATEGORY PAGES*/
+@media only screen and (max-width: 600px) {img.video-thumbnail{display:none;}}
+@media only screen and (max-width: 1000px) {.columns-general.tile-row.ecb-flexi-tiles{display:none;}}
+/* @media only screen and (max-width: 1000px){.flexi-row.center.is-fixed-height.is-full-width.is-sin-img{display:none;}} */
+
+/*MAIN CATEGORY PAGE*/@media only screen and (min-width:600px) and (max-width: 1000px) {.fr-fic.fr-dib.mobilecat{
+display:initial!important; width: 44% !important; padding: 15px 15px 5px 15px;}}
+/*SUB CATEGORY PAGE*/@media only screen and (max-width: 600px) {.fr-fic.fr-dib.mobilecat{
+display:initial!important; width: 40% !important; padding: 10px 15px 5px 15px;}}
+
+/*MAIN CATEGORY PAGE*/@media only screen and (min-width:600px) and (max-width: 1000px) {.fr-fic.fr-dib.mobilesubcat{
+display: initial !important; width: 46% !important; padding: 10px 7.5px 5px 8px;}}
+/*SUB CATEGORY PAGE*/@media only screen and (max-width: 600px) {.fr-fic.fr-dib.mobilesubcat{
+display:initial !important; width: 48% !important; padding: 10px 1.5px 0px 3px;}}
+
+/*MOBILE ONLY*/
+.mobile{display:block !important; width:100%; margin: 15px auto !important;}
+/*MAIN CATEGORY PAGE*/.mobilecat{display:initial !important;}
+/*SUB CATEGORY PAGE*/.mobilesubcat{display:initial!important;}
+
+/*DESKTOP ONLY*/
+.largescreen{display:none !important;}
+.pagehead{font-size:2em;}
+.control{display:inline !important;}
+.label{display:inline-block !important; min-width: 150px;}
+.field{display:inline-block !important; width:100%;}
+.form-button {padding-left: 0% !important;}
+.usp-list li {text-align: center !important;}
+#slideshow{height:100vw;}
+.middle-header{margin: 0;}
+button.btn.no-caption.btn-search{padding-top:10px;}
+
+/*ITEMS THAT ARE SET TO SHOW UP ON MOBILE ONLY*/
+@media all and (min-width: 639px){
+.mobilecat{display:none !important;} 
+.mobilesubcat{display:none !important;} 
+.mobile{display:none !important;} 
+.largescreen{display:block !important; width:100%;}
+.pagehead{font-size:2.5em;}
+.infobox{padding-left: 3em !important;}
+.semicolumn{width:80%;}
+.control{display:table !important;}
+.label{display:table-cell !important;}
+.field{display:table-cell !important;}
+.form-button {padding-left: 27% !important;}
+#slideshow{height: 23.5vw;}
+.middle-header{margin: 5px auto 15px;}}
+
+/*GENERAL SITE-WIDE CUSTOM ITEMS*/
+.top-dropdown.language{display:none;}
+.column img{width:100%; height:100%; object-fit: cover; overflow: hidden;}
+.payment-icons img{width:auto; max-width:280px;}
+.fa-phone {color: var(--fm-blue); font-size: 12px; transform: scaleX(-1); padding-left:3px; margin-left:-3px;}
+.fa-envelope {color: var(--fm-blue); font-size: 12px;}
+.fr-view img.fr-dib {margin:0 auto;}
+hr{border: solid .5px rgba(173, 216, 230, 0.5);}
+.logo img{height:70px;}
+.white{color: white;}
+.hidelink{opacity:0;}
+.one-page-checkout .order-overview-section {padding: 15px 15px;}
+.inline-loading-indicator img {max-width:50px !important;}
+.columns-general{padding: 12px 0 0 0;}
+
+/*HEADERS*/
+h1, #text{color:#313131;}
+.pagehead{line-height:1.2em !important; color: #00a7e1; padding-top:0px !important; }
+.compact h2{margin:40px 0px 30px 0px;}
+.has-aside{border-right-color:#fff !important; width:100%;}
+aside{display:block;}
+p.bodytext{font-size:1.2em;}
+body{color:#515151;}
+h1, h2, h3, h4, h5, h6, .nav-item-root .hyp-top-lvl, a.font-h4{letter-spacing:1px; word-break: keep-all;}
+h2{font-weight: 500;color:#313131;}
+.top-header{margin-top:3px; font-size-adjust: .55;}
+
+/*PRODUCT LIST PAGE*/
+.l-products-item, .l-products-item::before, .l-products-item::after, .list-news li, .list-reviews li {border-color: #fff;}
+.view-changer {padding-bottom:10px;}
+.field-btn-add .btn-add-to-basket{padding-left:13px ;padding-right:45px;}
+.product-title{color:#085a8d;}
+.h1-holder{text-align:center; margin:10px 0px 0px 0px; padding: 10px 5px 5px 5px; background-color:var(--fm-blue) !important; border-bottom: 5px solid var(--fm-lightblue); border-radius: 4px;}
+.h1-holder h1{size: 1.5em; color:#ffffff !important; font-weight:600 !important;}
+.combined-header{margin:0px !important; height:60px !important;}
+
+/*PRODUCT DETAILS PAGE*/
+.column-facets{display:none !important ;}
+.details-info h1{padding-bottom: .3em; line-height:1.6 !important; text-transform:none !important;}
+.details.info .product-id{font-size: 18px; margin-top: 6px;}
+.details-info .description{font-size:15px; line-height:1.6;}
+.product-description{margin-bottom:2px;}
+.product-bottom-info {margin-top: 0px; }
+.tutorial_title {border-bottom: 3px solid #1f7bc9;   padding-bottom: 2px;   margin-bottom: 20px;   width: fit-content;}
+.tab-control .description{font-size:15px; line-height:1.6;}
+.order-box .form-row .label {font-weight:600;}
+
+/*REMOVES DUPLICATED VIDEO THUMBNAIL ON MOBILE PRODUCT PAGE*/
+@media only screen and (max-width: 600px) {img.video-thumbnail{display:none;}}
+
+/*NAV*/
+.nav-wrapper .font-h4{color: #00a7e4;}
+.nav-item-block{padding-bottom:30px;}
+a.hyp-top-lvl{font-weight:bold;}
+.border-simple-left{border-left:0px;}
+.separator-dark{display:none !important;}
+.arrow-grey::before {top:1em;}
+.nav-lvl-3 .hyp {line-height: 20px;}
+header.sticky-mode nav .hyp-top-lvl {color: #484848;}
+
+/*2019 Navigation Flexi Tiles*/
+a.font-btn.flexi-link{ border-radius: 10px;}
+
+/*NEWS*/
+.news-title.font-title.font-bigger{font-size:20px; color:var(--fm-blue);font-weight:500;line-height: 25px;}
+.list-news li a{display: block;}
+.list-news li{margin: 40px 0px;}
+.list-news-header li{margin: 15px 0;}
+.arrow-black::before {top:0.8em;}
+div#newsPage h1{text-transform: capitalize !important;}
+#newspage img{height: initial !important;}
+.news-date{color: #999;}
+
+/*CAREERS PAGE - BOX SHADOW ON BUTTONS*/
+.col-12.flex-tile-block{ box-shadow: 0px 0px 5px 1px rgba(201,201,201,0.5);}
+
+/*ORDER PAGE*/
+.row-simple-product .price-node{padding-left: 15px;}
+
+/* MY ACCOUNT PAGE*/
+#myAccountPage .account-top-actions {display:none;}
+
+/*SUB ACCOUNT PAGE - TITLE & BUTTON EDIT*/
+#sub-accountsPage .h1-holder {margin-left:-280px;} 
+#sub-accountsPage .h1-holder a{display:none;} 
+#sub-accountsPage .h1-holder h1{font-size:20px;} 
+
+/*VIEW COMPANY DETAILS PAGE - TITLE EDIT*/
+#editProfilePage .h1-holder {margin-left:-280px;} 
+#editProfilePage .h1-holder h1{font-size:20px;} 
+
+/*AUTHORISATIONS PAGE - TITLE EDIT*/
+#authorizationHistoryPage .h1-holder {margin-left:-280px;} 
+#authorizationHistoryPage .h1-holder h1{font-size:20px;} 
+
+/* INVOICES ETC */
+.row-simple-product .font-bigger{font-size:11px; display:inline-flex;}
+.row-simple-product .col-title{padding:0px 5px;}
+.profile-page-cnt h1{font-size:1em;}
+div.history-details .gvi td {padding:0px 0px 0px 15px;font-size: 10px;}
+div#orderHistoryDetailPage div.h1-holder h1{font-size:1.8em !important; color:#0064aa !important; }
+div#orderHistoryDetailPage div.h1-holder{padding-top:10px; background-color:#ffffff !important; text-align:left !important;}
+.profile-page-cnt .columns-addresses > .column {width: 25% !important;word-break: keep-all;font-size: .9em;line-height: initial;}
+.history-details .columns-addresses {word-break: keep-all;}
+.row-simple-product .col-uom{ line-height: 12px; padding: 4px 0px 3px 0px;vertical-align: middle;}
+.gvi-order-lines-wrapper.gvi-border-color{margin-top:5px;}
+div.column.block-payer-address{display:none;}
+
+/*Custom Disclaimer on invoices/orders*/
+.gvi-totals-order-history::after {
+    content: "Title of goods does not pass until payment is received in full."; 
+    margin-right: -139px;
+    color: red;
+    font-weight:500;
+} 
+
+/*HEADER ADDRESS FOR ORDERS / INVOICES - ONLY POSSIBLE ON PRINT DIALOGUE PAGE*/
+@media print {
+    .middle-header{
+        background-image: url("https://www.flemingmedical.ie/content/files/Banners/Invoice Banners/invoice_header_V3.png"); 
+        background-size: 100% auto;    display: inline-block;    width: 100%;    height: 100px;    content: "" ;
+        -webkit-print-color-adjust: exact;    color-adjust: exact !important;    background-repeat: no-repeat;
+    }
+}
+
+/*NEED TO CACHE IMAGE BEFORE PRINT DIALOGUE ABOVE - In order for the new header text to be visible on the print dialogue page - the new image needs to be viewed by the site first - therefore the image has been placed on the invoices/orders page but is not big enough to view - display:none; will not work*/
+.profile-page-cnt .history-details::after,
+.profile-page-cnt .history-details::before {
+    background-size: 100% auto;
+    display: inline-block;
+    width: 100%;
+    content: "";
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact !important;
+    background-repeat: no-repeat;
+}
+
+.profile-page-cnt .history-details::before {
+    background-image: url("https://www.flemingmedical.ie/content/files/Banners/Invoice Banners/invoice_header_V3.png");
+    height: 2px;
+}

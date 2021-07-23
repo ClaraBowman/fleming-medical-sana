@@ -1,0 +1,24 @@
+{
+  "name": "fleming-medical-sana",
+  "version": "1.0.0",
+  "description": "Optimized frontend styles and scripts for the Fleming Medical Sana websites.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --public-url /content/files/code",
+    "build": "parcel build src/index.html --public-url /content/files/code",
+    "clean": "rm -r dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fleming-medical/fleming-medical-sana.git"
+  },
+  "author": "David Matthew",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fleming-medical/fleming-medical-sana#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "swiper": "^6.6.2"
+  }
+}
