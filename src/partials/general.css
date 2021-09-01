@@ -272,6 +272,24 @@ a:focus {
   margin-top: 20px;
 }
 
+.top-dropdown.language .hyp {
+  display: flex;
+  padding: 0 35px 0 15px;
+  border-left: 5px solid transparent;
+}
+
+.top-dropdown.language .hyp.selected {
+  border-left-color: #6fb9e155;
+}
+
+.language.top-dropdown .summary {
+  padding-top: 0;
+}
+
+.top-dropdown.language .opener .flag {
+  left: 10px;
+}
+
 [data-aos] {
   animation-timing-function: ease;
   animation-duration: 1.2s;
@@ -398,5 +416,11 @@ a:focus {
 
   .gmap-embed {
     height: 650px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-item-root .hyp-top-lvl {
+    padding: 0 13px;
   }
 }

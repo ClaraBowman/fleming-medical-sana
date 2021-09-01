@@ -1,6 +1,6 @@
 {
   "name": "fleming-medical-sana",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Optimized frontend styles and scripts for the Fleming Medical Sana websites.",
   "main": "index.js",
   "scripts": {

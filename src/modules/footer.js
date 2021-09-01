@@ -1,9 +1,10 @@
 import isIrishSite from './regex';
+export { socialLinks, whereToFindUs };
 
 /**
- * Newsletter Replacement Script
+ * Social Links/Newsletter Replacement Script
  */
-export default function newsletterReplace() {
+function socialLinks() {
     let socialIconsMarkUp;
     
     if (isIrishSite()) {
@@ -66,4 +67,31 @@ export default function newsletterReplace() {
         document.querySelector('footer .columns-general.top').appendChild(socialIcons);
     }   
 
+}
+
+/**
+ * Stockists Banner.
+ */
+function whereToFindUs() {
+    let ft = document.querySelector('footer');
+
+    let stockistsEl = document.createElement('div');
+
+    stockistsEl.className += 'stockists';
+
+    let stockistsMarkup = `
+    <div class="center">
+        <i class="fas fa-map-signs"></i>
+        <p>Looking for our products in store? View the map to find your nearest partner Pharmacy</p>
+        <a href="/where-to-find-us">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Map</span>
+            <span>Where to Buy</span>
+        </a>
+    </div>
+    `;
+
+    stockistsEl.innerHTML = stockistsMarkup;
+
+    ft.insertBefore(stockistsEl, ft.childNodes[0]);
 }

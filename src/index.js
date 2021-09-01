@@ -1,12 +1,14 @@
-import stockistsBanner from './modules/stockists';
-import newsletterReplace from './modules/newsletter';
+import { flagLinks, navFix } from './modules/header';
+import { socialLinks, whereToFindUs } from './modules/footer';
 import productPageScript from './modules/productPage';
 import sliders from './modules/sliders';
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    stockistsBanner();
-    newsletterReplace();
+    flagLinks();
+    navFix();
+    whereToFindUs();
+    socialLinks();
     productPageScript();
     sliders();
     

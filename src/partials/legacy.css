@@ -62,7 +62,6 @@ button.btn.no-caption.btn-search{padding-top:10px;}
 .middle-header{margin: 5px auto 15px;}}
 
 /*GENERAL SITE-WIDE CUSTOM ITEMS*/
-.top-dropdown.language{display:none;}
 .column img{width:100%; height:100%; object-fit: cover; overflow: hidden;}
 .payment-icons img{width:auto; max-width:280px;}
 .fa-phone {color: var(--fm-blue); font-size: 12px; transform: scaleX(-1); padding-left:3px; margin-left:-3px;}
