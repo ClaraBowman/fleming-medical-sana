@@ -1,0 +1,112 @@
+/* Styles for the leadership profiles */
+
+.leadership-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.profile-card {
+  height: 420px;
+  flex-basis: 100%;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-card:hover img {
+  transform: scale(1.1);
+}
+
+.profile-card img,
+.profile-card .content {
+  position: absolute;
+}
+
+.profile-card img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.profile-card .content {
+  box-sizing: border-box;
+  padding: 0 10px;
+  top: 70%;
+  width: 100%;
+  height: 420px;
+  border-top: 5px solid var(--fm-lightblue);
+  background-image: url("https://www.flemingmedical.ie/content/files/images/banner-images/vector-bg-img-grey-v2.jpg");
+  background-color: white;
+  background-attachment: fixed;
+  transition: top 0.4s;
+}
+
+.profile-card.expanded .content {
+  top: 0;
+}
+
+.profile-card .toggle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: var(--fm-blue);
+  font-size: 20px;
+  transition: transform 0.4s;
+}
+
+.profile-card.expanded .toggle {
+  transform: rotate(135deg);
+}
+
+.profile-card .name {
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.profile-card .title {
+  color: var(--fm-lightblue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.profile-card .name,
+.profile-card .title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.profile-card .info {
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.profile-card.expanded .info {
+  opacity: 1;
+}
+
+.profile-card .info ul {
+  margin-block-start: 0;
+  padding-inline-start: 25px;
+}
+
+@media (min-width: 550px) {
+  .profile-card {
+    flex-basis: 48%;
+  }
+}
+
+@media (min-width: 769px) {
+  .profile-card {
+    flex-basis: 32%;
+  }
+}

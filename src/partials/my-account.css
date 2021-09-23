@@ -1,63 +1,103 @@
 /* Styles controlling the login and customer account pages (also check legacy CSS) */
 
-#loginPage, #forgotPasswordPage {
-    font-size: 16px;
+#customer-resources-banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin: 0;
+  padding: 30px;
+  background-size: cover;
+  color: white;
+}
+
+#customer-resources-banner h3 {
+  text-transform: unset;
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2em;
+}
+
+#customer-resources-banner p {
+  font-size: 18px;
+  margin: 0;
+}
+
+#customer-resources-banner .fa-download {
+  font-size: 50px;
+  margin-left: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+#customer-resources-banner:hover .fa-download {
+  opacity: 1;
+}
+
+#loginPage,
+#forgotPasswordPage {
+  font-size: 16px;
 }
 
 #loginPage .semicolumn {
-    width: 100%;
+  width: 100%;
 }
 
 .product-to-return .row-comment {
-    display: none;
+  display: none;
 }
 
 .btn-profile-container {
-    margin: 2px 0px ;
+  margin: 2px 0px 5px;
 }
 
 .btn-profile-wrap {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .btn-profile {
-    margin-bottom: 2px; 
-    flex-basis: 100%;
+  margin-bottom: 2px;
+  flex-basis: 100%;
 }
 
 /* Custom invoice footer */
 .profile-page-cnt .history-details::after {
-    background-image: url('https://www.flemingmedical.ie/content/files/images/invoice-footer-ireland-v1.svg');
-    padding: 0;
-    min-height: 120px;
-    margin: 10px 0;
+  background-image: url("https://www.flemingmedical.ie/content/files/images/invoice-footer-ireland-v1.svg");
+  padding: 0;
+  min-height: 120px;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 375px) {
-    .btn-profile {
-        flex-basis: 49%;
-    }
+  .btn-profile {
+    flex-basis: 49%;
+  }
 }
 
 @media screen and (min-width: 475px) {
-    .btn-profile {
-        flex-basis: 49.5%;
-    }
+  .btn-profile {
+    flex-basis: 49.5%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .btn-profile {
-        flex-basis: 32.5%;
-    }
+  .btn-profile {
+    flex-basis: 32.5%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .btn-profile-container {
-        margin: 5px 0px;
-    }
-    .btn-profile {
-        flex-basis: 19.5%;
-    }
+  .btn-profile-container {
+    margin: 5px 0px;
+  }
+  .btn-profile {
+    flex-basis: 19.5%;
+  }
 }

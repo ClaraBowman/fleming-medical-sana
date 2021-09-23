@@ -1,103 +1,102 @@
 /* Styles for the Medicare LifeSense app banner and landing page. */
 
 #lifesense-home-banner {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    height: 130px;
-    margin: 20px 0 40px;
-    background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  height: 130px;
+  margin: 20px 0 40px;
+  background-size: cover;
 }
 
 #lifesense-home-banner img {
-    height: 100px;
+  height: 100px;
 }
 
 #lifesense-home-banner h3,
 #lifesense-home-banner p {
-    color: #fff;
-    margin: 0 20px;
+  color: #fff;
+  margin: 0 20px;
 }
 
 #lifesense-home-banner p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #lifesense-home-banner img,
 #lifesense-home-banner button {
-    margin: 0 20px;  
+  margin: 0 20px;
 }
 
 a:hover #lifesense-home-banner h3,
 a:hover #lifesense-home-banner button {
-     text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
-    #lifesense-home-banner {
-        height: 170px;
-    }
+  #lifesense-home-banner {
+    height: 170px;
+  }
 
-    #lifesense-home-banner img {
-        height: 130px;    
-    }
+  #lifesense-home-banner img {
+    height: 130px;
+  }
 
-    #lifesense-home-banner button {
-        font-size: 16px;   
-    }
-    
+  #lifesense-home-banner button {
+    font-size: 16px;
+  }
 }
 
 #lifesense-app-banner-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    background-image: url('https://www.flemingmedical.ie/content/files/images/banner-images/wavy-blue-header-background-v2.svg');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  background-image: url("https://www.flemingmedical.ie/content/files/images/banner-images/wavy-blue-header-background-v2.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
 }
 
 #wavy-background {
-    width: 100%;
+  width: 100%;
 }
 
 #lifesense-app-header {
-    width: 90%;
-    max-width: 1000px;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .app-icon-sm {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 13px;
-    height: 50px;
-    margin: 0 20px -16px 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 13px;
+  height: 50px;
+  margin: 0 20px -16px 0;
 }
 
 @media screen and (min-width: 500px) {
-    #lifesense-app-banner-container {
-        height: 350px;
-        margin-bottom: 30px;
-    }
+  #lifesense-app-banner-container {
+    height: 350px;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    #lifesense-app-banner-container {
-        margin-top: 2px;
-        height: 550px;
-    }
+  #lifesense-app-banner-container {
+    margin-top: 2px;
+    height: 550px;
+  }
 
-    #lifesense-app-header {
-        width: 78%;
-        top: 56%;
-    }
+  #lifesense-app-header {
+    width: 78%;
+    top: 56%;
+  }
 }

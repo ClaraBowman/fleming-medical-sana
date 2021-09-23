@@ -146,6 +146,52 @@
   background-color: #fff;
 }
 
+#marketing-calendar {
+  padding: 10px 0 50px;
+}
+
+#marketing-calendar .swiper-slide {
+  width: 600px;
+  height: 368px;
+  transition: all 0.4s;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#marketing-calendar .swiper-slide .overlay {
+  background-color: var(--fm-blue);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#marketing-calendar .swiper-slide:hover .overlay {
+  opacity: 0.4;
+}
+
+#marketing-calendar .swiper-slide:hover .bg-img {
+  transform: scale(1.18);
+}
+
+#marketing-calendar .fa-search {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  font-size: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+}
+
+#marketing-calendar .swiper-slide:hover .fa-search {
+  opacity: 0.9;
+  margin-top: -20px;
+}
+
+#marketing-calendar .swiper-slide h4 {
+  z-index: 10;
+}
+
 @media screen and (min-width: 370px) {
   .swiper-cube-container {
     height: 500px;

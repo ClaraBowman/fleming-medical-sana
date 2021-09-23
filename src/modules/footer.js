@@ -1,14 +1,14 @@
-import isIrishSite from './regex';
+import isIrishSite from "./regex";
 export { socialLinks, whereToFindUs };
 
 /**
  * Social Links/Newsletter Replacement Script
  */
 function socialLinks() {
-    let socialIconsMarkUp;
-    
-    if (isIrishSite()) {
-        socialIconsMarkUp = `
+  let socialIconsMarkUp;
+
+  if (isIrishSite()) {
+    socialIconsMarkUp = `
         <span class="font-h4">Stay Updated</span>
         <div class="social-icons">
             <span>Fleming Medical</span>
@@ -30,8 +30,8 @@ function socialLinks() {
             <a href="https://www.instagram.com/physiologix_sports/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         `;
-    } else {
-        socialIconsMarkUp = `
+  } else {
+    socialIconsMarkUp = `
         <span class="font-h4">Stay Updated</span>
         <div class="social-icons">
             <span>Fleming Medical</span>
@@ -53,33 +53,33 @@ function socialLinks() {
             <a href="https://www.instagram.com/physiologix_sportsuk/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         `;
-    }
-    
+  }
 
-    /* Replace the newsletter if it is present, otherwise create a new div */
-    let newsletter = document.getElementsByClassName("newsletter")[0];
-    if (newsletter) {
-        newsletter.innerHTML = socialIconsMarkUp;
-    } else {
-        let socialIcons = document.createElement('div');
-        socialIcons.classList.add('column', 'newsletter');
-        socialIcons.innerHTML = socialIconsMarkUp;
-        document.querySelector('footer .columns-general.top').appendChild(socialIcons);
-    }   
-
+  /* Replace the newsletter if it is present, otherwise create a new div */
+  let newsletter = document.getElementsByClassName("newsletter")[0];
+  if (newsletter) {
+    newsletter.innerHTML = socialIconsMarkUp;
+  } else {
+    let socialIcons = document.createElement("div");
+    socialIcons.classList.add("column", "newsletter");
+    socialIcons.innerHTML = socialIconsMarkUp;
+    document
+      .querySelector("footer .columns-general.top")
+      .appendChild(socialIcons);
+  }
 }
 
 /**
  * Stockists Banner.
  */
 function whereToFindUs() {
-    let ft = document.querySelector('footer');
+  let ft = document.querySelector("footer");
 
-    let stockistsEl = document.createElement('div');
+  let stockistsEl = document.createElement("div");
 
-    stockistsEl.className += 'stockists';
+  stockistsEl.className += "stockists";
 
-    let stockistsMarkup = `
+  let stockistsMarkup = `
     <div class="center">
         <i class="fas fa-map-signs"></i>
         <p>Looking for our products in store? View the map to find your nearest partner Pharmacy</p>
@@ -91,7 +91,7 @@ function whereToFindUs() {
     </div>
     `;
 
-    stockistsEl.innerHTML = stockistsMarkup;
+  stockistsEl.innerHTML = stockistsMarkup;
 
-    ft.insertBefore(stockistsEl, ft.childNodes[0]);
+  ft.insertBefore(stockistsEl, ft.childNodes[0]);
 }
