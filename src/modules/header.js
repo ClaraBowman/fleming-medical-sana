@@ -5,40 +5,30 @@ export { flagLinks, navFix };
  * Create Country Flag Links.
  */
 function flagLinks() {
-  let topAction = document.querySelector(".top-header .top-action");
+
+  // Create the containing div.
   let countryLink = document.createElement("div");
   countryLink.classList.add("top-dropdown", "language");
-  let countryLinkHTML;
 
-  if (isIrishSite()) {
-    countryLinkHTML = `
-        <div class="opener">
-            <img class="flag" src="/content/files/images/languages/flag-ie.svg" alt="Fleming Medical IE" >
-        </div>
-        <div class="summary">
-            <a class="hyp selected" href="/">
-                <img src="/content/files/images/languages/flag-ie.svg" alt="Fleming Medical IE" class="flag">Fleming Medical IE
-            </a>
-            <a href="https://www.flemingmedical.co.uk" class="hyp">
-                <img src="/content/files/images/languages/flag-uk.svg" alt="Fleming Medical UK" class="flag">Fleming Medical UK
-            </a>
-        </div>`;
-  } else {
-    countryLinkHTML = `
-        <div class="opener">
-            <img class="flag" src="/content/files/images/languages/flag-uk.svg" alt="Fleming Medical UK" >
-        </div>
-        <div class="summary">
-            <a class="hyp selected" href="/">
-                <img src="/content/files/images/languages/flag-uk.svg" alt="Fleming Medical UK" class="flag">Fleming Medical UK
-            </a>
-            <a href="https://www.flemingmedical.ie" class="hyp">
-                <img src="/content/files/images/languages/flag-ie.svg" alt="Fleming Medical IE" class="flag">Fleming Medical IE
-            </a>
-        </div>`;
-  }
+  // Only populate the path component of the url if there exists a rel alternate link to the UK site.
+  let validPath = (document.querySelector('link[hreflang="en-GB"]')) ? window.location.pathname : '';
 
-  countryLink.innerHTML = countryLinkHTML;
+  // Conditionally populate the HTML.
+  countryLink.innerHTML = `
+    <div class="opener">
+      <img class="flag" src="/content/files/images/languages/flag-${isIrishSite() ? 'ie' : 'uk'}.svg" alt="Fleming Medical ${isIrishSite() ? 'IE' : 'UK'}" >
+    </div>
+    <div class="summary">
+      <a class="hyp selected" href="${validPath}">
+        <img src="/content/files/images/languages/flag-${isIrishSite() ? 'ie' : 'uk'}.svg" alt="Fleming Medical ${isIrishSite() ? 'IE' : 'UK'}" class="flag">Fleming Medical ${isIrishSite() ? 'IE' : 'UK'}
+      </a>
+      <a href="https://www.flemingmedical.${isIrishSite() ? 'co.uk' : 'ie'}${validPath}" class="hyp">
+        <img src="/content/files/images/languages/flag-${isIrishSite() ? 'uk' : 'ie'}.svg" alt="Fleming Medical ${isIrishSite() ? 'UK' : 'IE'}" class="flag">Fleming Medical ${isIrishSite() ? 'UK' : 'IE'}
+      </a>
+    </div>`;
+  
+  // Prepend it to the relevant containing element.
+  let topAction = document.querySelector(".top-header .top-action");
   topAction.prepend(countryLink);
 }
 

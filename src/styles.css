@@ -1,5 +1,5 @@
 /* External stylesheets */
-@import 'swiper/swiper-bundle.css';
+@import 'npm:swiper/swiper-bundle.css';
 
 /* Variables accessible to all stylesheets */
 :root {
@@ -15,10 +15,10 @@
 @import './partials/forms.css';
 @import './partials/general.css';
 @import './partials/home.css';
-@import './partials/leadership.css';
 @import './partials/legacy.css';
 @import './partials/other-pages.css';
 @import './partials/lifesense-app.css';
 @import './partials/my-account.css';
+@import './partials/profiles.css';
 @import './partials/sliders.css';
 @import './partials/strip-banners.css';

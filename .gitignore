@@ -1,13 +1,14 @@
 # File types and folders to ignore.
-.cache/
-coverage/
-node_modules/
-dist/
 *.log
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
+.cache/
+.parcel-cache/
+coverage/
+node_modules/
+dist/
 ehthumbs.db
 Thumbs.db

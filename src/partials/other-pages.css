@@ -119,6 +119,49 @@
   content: "...";
 }
 
+/* Physiologix Landing Page */
+#phx-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#phx-header * {
+  box-sizing: border-box;
+}
+
+#phx-header .phx-logo {
+  margin: 40px 0;
+  width: 450px;
+  max-width: 100%;
+}
+
+#phx-header .heading-wrap {
+  position: relative;
+}
+
+#phx-header .heading-wrap h2 {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.6;
+  text-align: center;
+  font-size: 25px;
+}
+
+.categories.phx .category-hover-btn {
+  background-color: #15284c;
+  border-left: 5px solid #cb2245;
+}
+
+.categories.phx .border-effect {
+  background-color: #cb2245;
+}
+
 /* UK About Page */
 #uk-about-txt {
   font-size: 16px;
@@ -130,11 +173,25 @@
   flex: 0 0 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  #phx-header .heading-wrap h2 {
+    font-size: 45px;
+  }
+
+  .categories.phx .category-link {
+    flex-basis: 49%;
+  }
+
   #uk-about-txt {
     flex-wrap: nowrap;
   }
   #uk-about-txt-img {
     flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  #phx-header .heading-wrap h2 {
+    font-size: 65px;
   }
 }

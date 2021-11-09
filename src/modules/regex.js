@@ -9,9 +9,5 @@ export default function isIrishSite() {
   const regex = /https?:\/\/((www\.)|(test\.))?flemingmedical\.ie/i;
 
   // Return true if we're on the Irish site, otherwise return false.
-  if (regex.test(url)) {
-    return true;
-  } else {
-    return false;
-  }
+  return regex.test(url) ? true : false;
 }

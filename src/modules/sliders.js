@@ -1,4 +1,5 @@
-import Swiper from "swiper/bundle";
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
 
 /**
  * Function to initialize the site's SwiperJS sliders.
@@ -6,7 +7,7 @@ import Swiper from "swiper/bundle";
 export default function sliders() {
   // The LifeSense app screenshot slider.
   if (document.getElementById("app-slider")) {
-    const appSlider = new Swiper("#app-slider", {
+    new Swiper("#app-slider", {
       loop: true,
       pagination: {
         el: ".swiper-pagination",
@@ -31,7 +32,7 @@ export default function sliders() {
 
   // The slider introducing the training academy.
   if (document.getElementById("training-slider")) {
-    const trainingSlider = new Swiper("#training-slider", {
+    new Swiper("#training-slider", {
       loop: true,
       autoplay: {
         delay: 3500,
@@ -60,7 +61,7 @@ export default function sliders() {
 
   // The slider for the BLS course.
   if (document.getElementById("bls-slider")) {
-    const blsSlider = new Swiper("#bls-slider", {
+    new Swiper("#bls-slider", {
       loop: true,
       autoplay: {
         delay: 5000,
@@ -89,7 +90,7 @@ export default function sliders() {
 
   // The slider for the careers page.
   if (document.getElementById("employee-testimonials-slider")) {
-    const employeeSlider = new Swiper("#employee-testimonials-slider", {
+    new Swiper("#employee-testimonials-slider", {
       loop: true,
       pagination: {
         el: ".swiper-pagination",
@@ -104,7 +105,7 @@ export default function sliders() {
 
   // The testimonials cube slider.
   if (document.getElementById("testimonial-cube")) {
-    const testimonialCube = new Swiper("#testimonial-cube", {
+    new Swiper("#testimonial-cube", {
       loop: false,
       pagination: {
         el: ".swiper-pagination",
@@ -122,7 +123,7 @@ export default function sliders() {
 
   // The marketing calendar slider.
   if (document.getElementById("marketing-calendar")) {
-    const calendarSlider = new Swiper("#marketing-calendar", {
+    new Swiper("#marketing-calendar", {
       loop: true,
       pagination: {
         el: ".swiper-pagination",

@@ -40,8 +40,18 @@
 }
 
 #loginPage,
-#forgotPasswordPage {
+#forgotPasswordPage,
+#createAccountPage {
   font-size: 16px;
+}
+
+#loginPage h3,
+#createAccountPage h3 {
+  text-transform: none;
+}
+
+.gvi-totals-order-history:after {
+    content: "";
 }
 
 #loginPage .semicolumn {

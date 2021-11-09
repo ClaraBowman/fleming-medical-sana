@@ -1,7 +1,8 @@
 import { flagLinks, navFix } from './modules/header';
 import { socialLinks, whereToFindUs } from './modules/footer';
-import productPageScript from './modules/productPage';
+import productPage from './modules/productPage';
 import sliders from './modules/sliders';
+import profiles from './modules/profiles';
 
 document.addEventListener('DOMContentLoaded', () => {
     
@@ -9,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     navFix();
     whereToFindUs();
     socialLinks();
-    productPageScript();
+    productPage();
     sliders();
+    profiles();
     
 });

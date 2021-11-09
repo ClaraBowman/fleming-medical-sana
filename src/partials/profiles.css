@@ -1,6 +1,6 @@
-/* Styles for the leadership profiles */
+/* Styles for the staff profiles */
 
-.leadership-row {
+.profile-row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
