@@ -1,0 +1,273 @@
+/* Styles for the IE and UK About Us pages (most is for IE page) */
+#uk-about-txt {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#uk-about-txt-img {
+  flex: 0 0 100%;
+}
+
+#about-header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #eee;
+  overflow: hidden;
+  border-bottom: 10px solid var(--fm-lightblue);
+}
+
+#about-header .overlay {
+  background-image: linear-gradient(45deg, #005598, #6fb9e130);
+  opacity: 1;
+  width: 100%;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+#about-header .fleming-f {
+  position: absolute;
+  left: 10%;
+  height: 110%;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+#about-header .center {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+}
+
+#about-header .center h1 {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  text-transform: none;
+  font-size: 60px;
+}
+
+.link-target {
+  position: relative;
+  top: -80px;
+}
+
+.info-contents {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.info-contents ul {
+  box-sizing: border-box;
+  padding-inline-start: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#productImageMap {
+  position: relative;
+  flex-basis: 100%;
+}
+
+#productImageMap img {
+  width: 100%;
+}
+
+#productImageMap a {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  height: 85%;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#productImageMap a:hover {
+  background-color: #6fb9e115;
+}
+
+#productImageMap a:nth-child(1) {
+  left: 0;
+  width: 33%;
+}
+
+#productImageMap a:nth-child(2) {
+  left: 33.1%;
+  width: 20%;
+}
+
+#productImageMap a:nth-child(3) {
+  left: 53.2%;
+  width: 27%;
+}
+
+#productImageMap a:nth-child(4) {
+  left: 80.3%;
+  width: 10%;
+}
+
+#productImageMap a:nth-child(5) {
+  left: 90.4%;
+  width: 9%;
+}
+
+.core-values {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.core-values .value {
+  box-sizing: border-box;
+  margin: 30px 0;
+  flex-basis: 98%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: url("https://www.flemingmedical.ie/content/files/images/banner-images/vector-bg-img-grey-v2.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 5px solid #6fb9e1;
+  border-radius: 5px;
+}
+
+.core-values .value i {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #005598;
+  background-color: white;
+  margin: -65px 50% 20px 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.core-values .value h3 {
+  font-weight: 700;
+  color: #005598;
+}
+
+.core-values .value p {
+  font-size: 16px;
+}
+
+.core-values .value ul {
+  padding-inline-start: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+#our-story p {
+  font-size: 16px;
+}
+
+#our-story .link-box {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#fleming-brand-family {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#fleming-brand-family svg {
+  max-width: 800px;
+}
+
+#fleming-brand-family svg .arrow {
+  animation: arrow-down 3s infinite;
+}
+
+#fleming-brand-family svg .circles {
+  animation: slow-pulse 3s infinite;
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slow-pulse {
+  0% {
+    opacity: 0.4;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-full .overlay {
+    width: 65%;
+  }
+
+  .core-values {
+    justify-content: space-around;
+  }
+
+  .core-values .value {
+    flex-basis: 47%;
+  }
+}
+
+@media (min-width: 768px) {
+  #uk-about-txt {
+    flex-wrap: nowrap;
+  }
+
+  #uk-about-txt-img {
+    flex: 0 0 45%;
+  }
+
+  #about-header .overlay {
+    width: 45%;
+  }
+
+  .info-contents ul {
+    flex-basis: 25%;
+  }
+
+  #productImageMap {
+    flex-basis: 74%;
+  }
+}
+
+@media (min-width: 992px) {
+  .core-values {
+    justify-content: space-between;
+  }
+
+  .core-values .value {
+    flex-basis: 32%;
+  }
+
+  #our-story .link-box {
+    width: 600px;
+    float: right;
+    margin: 5px 0 20px 20px;
+  }
+}

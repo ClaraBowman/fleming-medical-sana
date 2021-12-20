@@ -1,4 +1,4 @@
-import isIrishSite from "./regex";
+import { isIrishSite, isCstLoggedIn } from "./utils";
 
 /**
  * Script to rum on product pages to clarify Sales Pack data.
@@ -18,12 +18,21 @@ export default function productPage() {
   if (bd.contains("product-details-page")) {
     let data = document.getElementById("custom-data").dataset;
 
-    // If it's the UK site, emphasise that trade prices are only visible when logged into your business account.
-    if (!isIrishSite()) {
+    // If it's the UK site and the customer is not logged in, run the following code.
+    if (!isIrishSite() && !isCstLoggedIn()) {
+
+      // Emphasise that trade prices are only visible when logged in to your business account.
       let orderBox = document.getElementsByClassName('order-box')[0];
-      let tradePriceNote = document.createElement('p');
+      let tradePriceNote = document.createElement('div');
+      tradePriceNote.classList.add('price-note');
       tradePriceNote.innerHTML = 'To see <strong>trade prices</strong>, please <a href="/profile/login">log in</a> to your business account.';
       orderBox.appendChild(tradePriceNote);
+
+      // Include the VAT text (this is to address a VAT display-related bug that should be fixed in a future Sana version)      
+      setTimeout(function() {
+        // Include a slight delay, otherwise the element won't exist yet.
+        document.querySelector('.prices .lbl-price sup').innerHTML += '<span class="vat">Inc. vat</span>';
+      }, 500);
     }
     
     // Change 'Quantity' to 'Select' if item is in stock.

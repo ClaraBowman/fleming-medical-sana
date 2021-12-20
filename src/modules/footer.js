@@ -1,5 +1,3 @@
-export { socialLinks, whereToFindUs };
-
 /**
  * Social Links/Newsletter Replacement Script
  */
@@ -64,3 +62,5 @@ function whereToFindUs() {
 
   ft.insertBefore(stockistsEl, ft.childNodes[0]);
 }
+
+export { socialLinks, whereToFindUs };

@@ -1,4 +1,6 @@
-/* General slider styles, plus specific slider styles below them. */
+/* Swiper JS styles. Due to conflicts with Sana we are only importing styles,
+not scripts directly (CDN is being used for this on a per-instance basis) */
+@import 'npm:swiper/swiper-bundle.css';
 
 .swiper-button-next,
 .swiper-button-prev {

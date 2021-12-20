@@ -1,4 +1,36 @@
 /* Site-wide general purpose CSS and helper classes */
+body {
+  color: #515151;
+}
+
+h1, h2, h3, h4, h5, h6, a.font-h4,
+.nav-item-root .hyp-top-lvl {
+  letter-spacing: 1px;
+  word-break: keep-all;
+}
+
+.h1-holder {
+  background-color: var(--fm-blue) !important;
+  border-bottom: 5px solid var(--fm-lightblue);
+  border-radius: 4px;
+  margin: 10px 0 0;
+  padding: 10px 5px 5px;
+  text-align: center;
+}
+
+.h1-holder h1 {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.border-simple-left {
+  border-left: 0;
+}
+
+a.hyp-top-lvl {
+  font-weight: 700;
+}
 
 .desktop-only {
   display: none;

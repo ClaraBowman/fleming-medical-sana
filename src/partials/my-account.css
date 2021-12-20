@@ -1,4 +1,63 @@
-/* Styles controlling the login and customer account pages (also check legacy CSS) */
+/* Styles controlling the login and customer account pages */
+#myAccountPage .account-top-actions {
+  display: none;
+}
+
+.categories.account-type {
+  justify-content: space-evenly;
+  margin: 100px 0 50px 0;
+}
+
+.category-link.account-choice {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.category-link.account-choice:hover {
+  text-decoration: none;
+  background-color: #fbfbfd;
+}
+
+.account-choice h2 {
+  color: var(--fm-blue);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.account-choice .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bad4e5;
+  color: #f8f8f8;
+  font-size: 45px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.account-choice:hover .icon-wrap {
+  background-color: #005598;
+}
+
+.account-choice p {
+  font-size: 16px;
+  color: #515151;
+}
+
+.account-choice .border-effect,
+.account-choice .category-hover-btn {
+  bottom: 0;
+}
 
 #customer-resources-banner {
   position: relative;

@@ -1,17 +1,20 @@
-import { flagLinks, navFix } from './modules/header';
-import { socialLinks, whereToFindUs } from './modules/footer';
+import * as header from './modules/header';
+import * as footer from './modules/footer';
 import productPage from './modules/productPage';
-import sliders from './modules/sliders';
 import profiles from './modules/profiles';
 
 document.addEventListener('DOMContentLoaded', () => {
+      
+    header.flagLinks();
+    header.addCountryClass();
+    header.createAccountLink();
     
-    flagLinks();
-    navFix();
-    whereToFindUs();
-    socialLinks();
+    footer.socialLinks();
+    footer.whereToFindUs();
+
     productPage();
-    sliders();
     profiles();
+
+    header.navFix();
     
 });

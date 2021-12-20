@@ -1,6 +1,3 @@
-/* External stylesheets */
-@import 'npm:swiper/swiper-bundle.css';
-
 /* Variables accessible to all stylesheets */
 :root {
     --fm-blue: #005598;
@@ -10,12 +7,12 @@
 }
 
 /* Import all custom stylesheets */
+@import './partials/about-us.css';
 @import './partials/categories.css';
 @import './partials/footer.css';
 @import './partials/forms.css';
 @import './partials/general.css';
 @import './partials/home.css';
-@import './partials/legacy.css';
 @import './partials/other-pages.css';
 @import './partials/lifesense-app.css';
 @import './partials/my-account.css';

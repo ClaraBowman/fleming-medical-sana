@@ -46,6 +46,33 @@
 }
 
 /* News Pages */
+.news-title.font-title.font-bigger {
+  font-size: 20px;
+  color: var(--fm-blue);
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.list-news li {
+  margin: 40px 0px;
+}
+
+.list-news-header li {
+  margin: 15px 0;
+}
+
+.arrow-black::before {
+  top: 0.8em;
+}
+
+#newsPage h1 {
+  text-transform: capitalize !important;
+}
+
+.news-date {
+  color: #999;
+}
+
 #newsOverviewPage,
 #newsPage {
   font-size: 16px;
@@ -101,9 +128,40 @@
   display: block;
 }
 
-/* Product pages */
-.product-details-page .attachments .gvi-name-value .name {
-  width: 100%;
+/* Product list and search pages */
+.combined-description {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.combined-description h2 {
+  text-transform: none;
+  font-weight: 700;
+  color: var(--fm-blue);
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  color: var(--fm-blue);
+}
+
+.productlist-list-page .column-facets,
+.productlist-search-page .column-facets {
+  display: none;
+}
+
+.productlist-list-page .combined-header {
+  margin-top: 0;
+}
+
+.l-products-item,
+.l-products-item:after,
+.l-products-item:before,
+.list-news li,
+.list-reviews li {
+  border-color: #ffffff;
 }
 
 .product-list-intro {
@@ -113,6 +171,53 @@
 .product-list-intro .heading-lowercase {
   font-size: 26px;
   margin-bottom: 0;
+}
+
+/* Product details pages */
+.details-info h1 {
+  line-height: 1.6 !important;
+  padding-bottom: 0.3em;
+  text-transform: none !important;
+}
+
+[itemprop="productID"],
+.product-id-value {
+  text-transform: uppercase;
+}
+
+.has-aside {
+  border: none;
+  width: 100%;
+}
+
+.product-details-page aside {
+  display: block;
+}
+
+.product-details-page .description {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#productPage .price-note {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.uk-site #productPage .after-prices {
+  display: none;
+}
+
+.uk-site .lbl-price sup .vat {
+  margin-left: 10px;
+  color: #999;
+  font-size: 13px;
+}
+
+.product-details-page .attachments .gvi-name-value .name {
+  width: 100%;
 }
 
 #productPage div[itemprop="description"]::after {
@@ -162,17 +267,6 @@
   background-color: #cb2245;
 }
 
-/* UK About Page */
-#uk-about-txt {
-  font-size: 16px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#uk-about-txt-img {
-  flex: 0 0 100%;
-}
-
 @media (min-width: 768px) {
   #phx-header .heading-wrap h2 {
     font-size: 45px;
@@ -180,13 +274,6 @@
 
   .categories.phx .category-link {
     flex-basis: 49%;
-  }
-
-  #uk-about-txt {
-    flex-wrap: nowrap;
-  }
-  #uk-about-txt-img {
-    flex: 0 0 45%;
   }
 }
 
