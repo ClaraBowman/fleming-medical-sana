@@ -1,4 +1,4 @@
-/* Styles for the Medicare LifeSense app banner and landing page. */
+/* Styles for Medicare LifeSense banners and landing pages. */
 
 #lifesense-home-banner {
   position: relative;
@@ -52,6 +52,8 @@ a:hover #lifesense-home-banner button {
   }
 }
 
+/* The main Medicare LifeSense landing page. */
+
 #lifesense-app-banner-container {
   position: relative;
   display: flex;
@@ -98,5 +100,61 @@ a:hover #lifesense-home-banner button {
   #lifesense-app-header {
     width: 78%;
     top: 56%;
+  }
+}
+
+/* Track, Learn, Perform landing page. */
+
+#tlp-banner {
+  background-image: linear-gradient(315deg, #d2e7f9, #f9f9f9, #eaf4fc);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#tlp-banner img {
+  width: 350px;
+  max-width: 85%;
+  margin-bottom: 40px;
+}
+
+#tlp-banner h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+#tlp-banner p {
+  font-weight: 700;
+  font-size: 30px;
+  max-width: 700px;
+  color: #bbb;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+.h-lifesense {
+  width: 100%;
+  line-height: 1.5em;
+  text-transform: unset;
+  color: #6fb9e1;
+  font-weight: 700;
+}
+
+h2.h-lifesense {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#lifesense-app-links {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-link-card:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  #lifesense-app-links {
+    text-align: left;
   }
 }

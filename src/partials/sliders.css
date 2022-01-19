@@ -194,6 +194,21 @@ not scripts directly (CDN is being used for this on a per-instance basis) */
   z-index: 10;
 }
 
+#tlp-slider-wrap .swiper-button-next,
+#tlp-slider-wrap .swiper-button-prev {
+  color: var(--fm-lightblue);
+  text-shadow: none;  
+}
+
+#tlp-slider-wrap .swiper-pagination-bullet-active {
+  background-color: var(--fm-lightblue);
+}
+ 
+ #tlp-app-slider {
+  width: 270px;
+  height: 550px;
+}
+
 @media screen and (min-width: 370px) {
   .swiper-cube-container {
     height: 500px;

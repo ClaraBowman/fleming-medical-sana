@@ -47,3 +47,17 @@
 .engagebay-forms .form .submit-btn:hover {
   background-color: #005598cc;
 }
+
+/* Needed to prevent chat widget from flickering on and off when it's disabled. Fades in otherwise */
+.ie-site .engagebay-messenger-frame {
+  animation: chatFade 5s;
+}
+
+@keyframes chatFade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.uk-site .engagebay-messenger-frame {
+  display: none;
+}

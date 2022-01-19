@@ -12,9 +12,10 @@
 @import './partials/footer.css';
 @import './partials/forms.css';
 @import './partials/general.css';
+@import './partials/grid.css';
 @import './partials/home.css';
 @import './partials/other-pages.css';
-@import './partials/lifesense-app.css';
+@import './partials/lifesense.css';
 @import './partials/my-account.css';
 @import './partials/profiles.css';
 @import './partials/sliders.css';
