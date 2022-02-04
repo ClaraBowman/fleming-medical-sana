@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6, a.font-h4,
   word-break: keep-all;
 }
 
+.nav-item-root .hyp-top-lvl {
+  padding: 0 14px;
+}
+
 .h1-holder {
   background-color: var(--fm-blue) !important;
   border-bottom: 5px solid var(--fm-lightblue);
@@ -20,8 +24,12 @@ h1, h2, h3, h4, h5, h6, a.font-h4,
 
 .h1-holder h1 {
   font-size: 1.5em;
-  color: #ffffff;
   font-weight: 700;
+}
+
+.h1-holder h1,
+.h1-holder span {
+  color: #ffffff;
 }
 
 .block-padding {
@@ -117,13 +125,13 @@ a:focus {
   color: var(--fm-blue);
   background-color: #ffffff;
   border: 2px solid var(--fm-blue);
-  padding: 8px 20px;
-  font-size: 18px;
+  padding: 6px 18px;
+  font-size: 16px;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .cta-link:hover {
@@ -514,7 +522,7 @@ a:focus {
 
 @media screen and (max-width: 1024px) {
   .nav-item-root .hyp-top-lvl {
-    padding: 13px;
     color: var(--fm-blue);
   }
 }
+

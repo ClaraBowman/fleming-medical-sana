@@ -1,5 +1,10 @@
 /* Styles for Medicare LifeSense banners and landing pages. */
 
+.ls-bg-gradient {
+  background-image: linear-gradient(315deg, #d2e7f9, #f9f9f9, #eaf4fc);
+  background-repeat: no-repeat;
+}
+
 #lifesense-home-banner {
   position: relative;
   overflow: hidden;
@@ -106,8 +111,6 @@ a:hover #lifesense-home-banner button {
 /* Track, Learn, Perform landing page. */
 
 #tlp-banner {
-  background-image: linear-gradient(315deg, #d2e7f9, #f9f9f9, #eaf4fc);
-  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -135,7 +138,7 @@ a:hover #lifesense-home-banner button {
   width: 100%;
   line-height: 1.5em;
   text-transform: unset;
-  color: #6fb9e1;
+  color: var(--ls-blue);
   font-weight: 700;
 }
 

@@ -1,4 +1,4 @@
-import { isIrishSite } from "./utils";
+import { isIrishSite, isCstLoggedIn } from "./utils";
   
 /**
  * Create Country Flag Links.
@@ -43,12 +43,39 @@ function addCountryClass() {
 }
 
 /**
- * Update the create account link on the UK site only.
+ * Update the create account links on the UK site only.
  */
-function createAccountLink() {
-  if (!isIrishSite() && document.getElementById('loginPage')) {
-    let accBtn = document.querySelector('[title="Create account"]');
-    if (accBtn) accBtn.href = '/account-type';
+function createAccountLinks() {
+  if (!isIrishSite()) {
+    
+    // Only create the links if the customer isn't already logged in.
+    if (!isCstLoggedIn()) {
+      // The desktop links section.
+      let desktopLinks = document.querySelectorAll('.top-action');
+
+      // The links section on mobile.
+      let mobileLinks = document.querySelectorAll('.top-dropdown.login .summary');
+      
+      // Create the two links (they need to be distinct).
+      let desktopLink = document.createElement('a');
+      desktopLink.classList.add('top-hyp', 'font-smaller');
+      desktopLink.innerText = 'Create Account';
+      desktopLink.href = '/account-type';
+      let mobileLink = document.createElement('a');
+      mobileLink.classList.add('hyp');
+      mobileLink.innerText = 'Create Account';
+      mobileLink.href = '/account-type';
+
+      // Append the links for desktop and mobile.
+      desktopLinks[0].insertBefore(desktopLink, desktopLinks[0].childNodes[2]);
+      mobileLinks[0].insertBefore(mobileLink, mobileLinks[0].childNodes[1]);
+    }
+
+    // Override the sign-up link on the login page.
+    if (document.getElementById('loginPage')) {
+      let accBtn = document.querySelector('[title="Create account"]');
+      if (accBtn) accBtn.href = '/account-type';
+    }
   }
 }
 
@@ -64,4 +91,4 @@ function navFix() {
   }
 }
 
-export { flagLinks, addCountryClass, createAccountLink, navFix}
+export { flagLinks, addCountryClass, createAccountLinks, navFix}

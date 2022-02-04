@@ -196,12 +196,12 @@ not scripts directly (CDN is being used for this on a per-instance basis) */
 
 #tlp-slider-wrap .swiper-button-next,
 #tlp-slider-wrap .swiper-button-prev {
-  color: var(--fm-lightblue);
+  color: var(--ls-blue);
   text-shadow: none;  
 }
 
 #tlp-slider-wrap .swiper-pagination-bullet-active {
-  background-color: var(--fm-lightblue);
+  background-color: var(--ls-blue);
 }
  
  #tlp-app-slider {
