@@ -1,4 +1,8 @@
 /* Site-wide general purpose CSS and helper classes */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #515151;
 }
@@ -108,15 +112,6 @@ a:focus {
 
 .page-padding-bottom {
   padding-bottom: 50px;
-}
-
-.col {
-  box-sizing: border-box;
-  margin: 20px 1%;
-}
-
-.col-xs-1 {
-  width: 99%;
 }
 
 .cta-link {
@@ -391,6 +386,23 @@ a:focus {
   left: 10px;
 }
 
+.curved-banner .banner-curve {
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+}
+
+.curved-banner .banner-curve:nth-last-child(2) {
+  bottom: 10px;
+  opacity: 0.25;
+}
+
+.img-resp {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
 [data-aos] {
   animation-timing-function: ease;
   animation-duration: 1.2s;
@@ -454,6 +466,12 @@ a:focus {
   }
 }
 
+@media (min-width: 390px) {
+  .curved-banner .banner-curve:nth-last-child(2) {
+    bottom: 15px;
+  }
+}
+
 @media (min-width: 450px) {
   .video-embed {
     height: 300px;
@@ -467,8 +485,8 @@ a:focus {
 }
 
 @media (min-width: 576px) {
-  .col-sm-2 {
-    width: 48%;
+  .curved-banner .banner-curve:nth-last-child(2) {
+    bottom: 20px;
   }
 }
 
@@ -511,18 +529,11 @@ a:focus {
     height: 560px;
   }
 
-  .col-md-3 {
-    width: 31%;
-  }
-
   .gmap-embed {
     height: 650px;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .nav-item-root .hyp-top-lvl {
-    color: var(--fm-blue);
+  .curved-banner .banner-curve:nth-last-child(2) {
+    bottom: 40px;
   }
 }
-

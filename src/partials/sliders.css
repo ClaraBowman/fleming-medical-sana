@@ -1,6 +1,7 @@
-/* Swiper JS styles. Due to conflicts with Sana we are only importing styles,
-not scripts directly (CDN is being used for this on a per-instance basis) */
+/* The swiper library will be removed eventually, being replaced by the
+much lighter tiny slider. Only importing css (not js) for efficiency. */
 @import 'npm:swiper/swiper-bundle.css';
+@import 'npm:tiny-slider/dist/tiny-slider.css';
 
 .swiper-button-next,
 .swiper-button-prev {

@@ -16,5 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
     profiles();
 
     header.navFix();
-    
 });
