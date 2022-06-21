@@ -16,6 +16,16 @@ export default function productPage() {
 
   // If the page is a product page.
   if (bd.contains("product-details-page")) {
+    
+    // Update the hrefs of the 'Write a Review' links and append the product code to the URL.
+    let itemProp = document.querySelector('[itemprop="productID"]');
+    let productCode = itemProp.innerHTML;
+    let reviewLinks = document.querySelectorAll('a[title="Write a review"]');
+    for (let i = 0; i < reviewLinks.length; i += 1) {
+      reviewLinks[i].href = '/write-a-review' + '?' + productCode;
+    }
+
+    // Get the custom dataset containing our UOM info.
     let data = document.getElementById("custom-data").dataset;
 
     // If it's the UK site and the customer is not logged in, run the following code.

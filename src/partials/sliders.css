@@ -3,6 +3,10 @@ much lighter tiny slider. Only importing css (not js) for efficiency. */
 @import 'npm:swiper/swiper-bundle.css';
 @import 'npm:tiny-slider/dist/tiny-slider.css';
 
+.tns-nav > [aria-controls].tns-nav-active {
+  background-color: var(--fm-lightblue);
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   display: none;

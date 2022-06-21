@@ -129,6 +129,14 @@
   display: block;
 }
 
+#newsPage table td {
+  padding: 10px;
+}
+
+#newsPage table {
+  font-size: 16px;
+}
+
 /* Product list and search pages */
 .combined-description {
   margin: 20px 0;
@@ -205,6 +213,10 @@
   padding: 10px 20px;
   border: 1px solid #eee;
   border-radius: 5px;
+}
+
+#productPage .hyp-print-preview {
+  color: var(--fm-blue) !important;
 }
 
 .uk-site #productPage .after-prices {

@@ -5,7 +5,7 @@
   padding: 0 !important;
   justify-content: center;
   border: 1px solid #eee;
-  border-left: 5px solid #57bdeb;
+  border-left: 5px solid var(--fm-lightblue);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -33,19 +33,20 @@
 
 .engagebay-forms .form .form-group {
   margin-bottom: 20px !important;
+  word-break: keep-all;
 }
 
 .engagebay-forms .form .submit-btn {
   border: none;
   color: #fff;
-  background-color: #005598;
+  background-color: var(--fm-blue);
   margin-top: 20px;
   padding: 10px 15px;
   border-radius: 5px;
 }
 
 .engagebay-forms .form .submit-btn:hover {
-  background-color: #005598cc;
+  background-color: var(--fm-blue-trans);
 }
 
 /* Needed to prevent chat widget from flickering on and off when it's disabled. Fades in otherwise */
