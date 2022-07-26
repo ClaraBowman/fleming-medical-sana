@@ -1,6 +1,6 @@
 {
   "name": "fleming-medical-sana",
-  "version": "1.4",
+  "version": "1.5",
   "description": "Optimized frontend styles and scripts for the Fleming Medical Sana websites.",
   "scripts": {
     "dev": "parcel src/index.html --public-url /content/files/code",
@@ -18,7 +18,6 @@
     "parcel": "^2.0.1"
   },
   "dependencies": {
-    "swiper": "^7.3.3",
     "tiny-slider": "^2.9.4"
   }
 }

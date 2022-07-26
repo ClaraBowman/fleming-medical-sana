@@ -1,268 +1,53 @@
-/* The swiper library will be removed eventually, being replaced by the
-much lighter tiny slider. Only importing css (not js) for efficiency. */
-@import 'npm:swiper/swiper-bundle.css';
+/* Only importing css (not js) for performance. */
 @import 'npm:tiny-slider/dist/tiny-slider.css';
+
+.tns-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+
+.tns-controls button {
+  background: transparent;
+  border: none;
+  color: var(--fm-lightblue);
+  font-size: 30px;
+  outline: none !important;
+}
 
 .tns-nav > [aria-controls].tns-nav-active {
   background-color: var(--fm-lightblue);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  display: none;
-  color: #fff;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+.quote-slider {
+  margin-bottom: 20px;
 }
 
-.swiper-button-next:focus,
-.swiper-button-prev:focus {
-  outline: none;
-}
-
-.swiper-button-next {
-  right: 5px;
-}
-
-.swiper-button-prev {
-  left: 5px;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--fm-blue);
-}
-
-.swiper-coverflow {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-coverflow .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  box-sizing: border-box;
-  border: 5px solid #fff;
-  max-width: 98%;
-  width: 400px;
-  height: 250px;
-}
-
-.swiper-coverflow .swiper-slide h4 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: var(--fm-blue-trans);
-  border-top: 5px solid var(--fm-lightblue-trans);
-  text-align: center;
-  padding: 10px;
-  color: #ffffff;
-}
-
-#app-slider .swiper-button-next,
-#app-slider .swiper-button-prev,
-#employee-testimonials-slider .swiper-button-next,
-#employee-testimonials-slider .swiper-button-prev {
-  color: var(--fm-blue);
-  text-shadow: none;
-}
-
-#app-slider .swiper-slide {
-  width: 250px;
-  height: 430px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  border: none;
-}
-
-#employee-testimonials-slider .swiper-slide {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 50px;
-}
-
-#employee-testimonials-slider .swiper-slide img {
-  width: 95%;
+.quote-slider img {
   padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.swiper-cube-container {
-  position: relative;
-  height: 550px;
-}
-
-#testimonial-cube {
-  width: 600px;
-  max-width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#testimonial-cube .swiper-slide {
-  font-size: 16px;
-  line-height: 1.5em;
-  background-image: linear-gradient(135deg, #005598, #0086c5);
-  color: #fff;
-  box-sizing: border-box;
-  padding: 25px 25px 0 40px;
-  border-bottom: 10px solid #6fb9e1;
-}
-
-#testimonial-cube blockquote {
-  margin-block: 0;
-  margin-inline: 0;
-}
-
-#testimonial-cube blockquote .fas {
-  position: absolute;
-}
-
-#testimonial-cube .fa-quote-left {
-  left: 10px;
-  top: 30px;
-  font-size: 20px;
-}
-
-#testimonial-cube .fa-quote-right {
-  right: 40px;
-  top: 120px;
-  font-size: 220px;
-  opacity: 0.075;
-}
-
-#testimonial-cube cite {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  border-left: 5px solid #6fb9e1;
-  padding: 5px;
-  margin-top: 15px;
-}
-
-#testimonial-cube cite .fa-user-circle {
-  color: #000;
-  opacity: 0.3;
-  font-size: 40px;
-  margin: 0 12px;
-}
-
-#testimonial-cube .swiper-pagination-bullet {
   background-color: #fff;
+  border-radius: 50%;
 }
 
-#marketing-calendar {
-  padding: 10px 0 50px;
+.quote-slider p {
+  margin: 0 0 0 40px;
+  font-weight: 700;
 }
 
-#marketing-calendar .swiper-slide {
-  width: 600px;
-  height: 368px;
-  transition: all 0.4s;
-  overflow: hidden;
-  border-radius: 15px;
+.quote-slider .fa-quote-left,
+.quote-slider .fa-quote-right {
+  z-index: -1;
+  opacity: 0.2;
+  font-size: 40px;
 }
 
-#marketing-calendar .swiper-slide .overlay {
-  background-color: var(--fm-blue);
-  opacity: 0;
-  transition: all 0.4s;
+.quote-slider .fa-quote-left {
+  top: -16px;
+  left: -50px;
+  transform: scale(1,-1);
 }
 
-#marketing-calendar .swiper-slide:hover .overlay {
-  opacity: 0.4;
-}
-
-#marketing-calendar .swiper-slide:hover .bg-img {
-  transform: scale(1.18);
-}
-
-#marketing-calendar .fa-search {
-  position: absolute;
-  color: #fff;
-  opacity: 0;
-  font-size: 45px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s;
-}
-
-#marketing-calendar .swiper-slide:hover .fa-search {
-  opacity: 0.9;
-  margin-top: -20px;
-}
-
-#marketing-calendar .swiper-slide h4 {
-  z-index: 10;
-}
-
-#tlp-slider-wrap .swiper-button-next,
-#tlp-slider-wrap .swiper-button-prev {
-  color: var(--ls-blue);
-  text-shadow: none;  
-}
-
-#tlp-slider-wrap .swiper-pagination-bullet-active {
-  background-color: var(--ls-blue);
-}
- 
- #tlp-app-slider {
-  width: 270px;
-  height: 550px;
-}
-
-@media screen and (min-width: 370px) {
-  .swiper-cube-container {
-    height: 500px;
-  }
-
-  #testimonial-cube .swiper-slide {
-    padding: 40px 40px 0 60px;
-  }
-
-  #testimonial-cube .fa-quote-left {
-    left: 18px;
-    top: 44px;
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 575px) {
-  .swiper-cube-container {
-    height: 400px;
-  }
-
-  #testimonial-cube .swiper-slide {
-    font-size: 18px;
-    padding: 40px 40px 0 80px;
-  }
-
-  #testimonial-cube .fa-quote-left {
-    left: 26px;
-    font-size: 30px;
-  }
-
-  #testimonial-cube cite .fa-user-circle {
-    font-size: 30px;
-    margin: 0 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
-
-  .swiper-coverflow .swiper-slide {
-    width: 533px;
-    height: 300px;
-  }
-
-  #employee-testimonials-slider .swiper-slide img {
-    width: 90%;
-  }
+.quote-slider .fa-quote-right {
+  right: -48px;
+  bottom: -12px;
 }
