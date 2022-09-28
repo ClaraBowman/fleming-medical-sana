@@ -1,64 +1,83 @@
 /* Styles for the site footer. */
 
 .site {
-  padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 footer {
-  background: linear-gradient(to bottom, var(--fm-blue), #0069aae3);
-  font-size: 14px;
+    background: linear-gradient(to bottom, var(--fm-blue), #0069aae3);
+    font-size: 14px;
 }
 
 footer .bottom {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 footer .font-h4,
 .column.newsletter div {
-  color: #fff;
+    color: #fff;
+}
+
+#stockists .flex-ctr {
+    justify-content: flex-start;
+}
+
+#stockists .cta-link {
+    border: none;
+    margin-left: 20px;
+    padding: 4px 16px;
+    color: var(--fm-lightblue);
+}
+
+#stockists .cta-link:hover {
+    color: #fff;
+}
+
+#stockists .cta-link .fa-map-marked-alt {
+    font-size: 18px;
 }
 
 .noclick {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .newsletter form {
-  display: none;
+    display: none;
 }
 
 .social-icons {
-  display: flex;
-  margin-bottom: 12px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: left;
+    display: flex;
+    margin-bottom: 12px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
 }
 
 .social-icons a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .social-icons span {
-  display: inline-block;
-  width: 120px;
-  margin-top: 6px;
+    display: inline-block;
+    width: 120px;
+    margin-top: 6px;
 }
 
 .social-icons i {
-  height: 35px;
-  width: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 18px;
-  margin: 0 12px 0 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transition: all 0.4s;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 12px 0 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.4s;
 }
 
 .social-icons i:hover {
-  color: var(--fm-blue);
-  background-color: rgba(255, 255, 255, 1);
+    color: var(--fm-blue);
+    background-color: rgba(255, 255, 255, 1);
 }

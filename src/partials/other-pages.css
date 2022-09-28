@@ -2,167 +2,167 @@
 
 /* Customer Resources Page */
 .resources .heading {
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .resources .heading i {
-  width: 40px;
+    width: 40px;
 }
 
 .resources .heading i,
 .resources .heading h2 {
-  color: var(--fm-blue);
-  font-size: 1.8em;
+    color: var(--fm-blue);
+    font-size: 1.8em;
 }
 
 .resources .heading h2 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .resources h3,
 .resources .heading h2 {
-  text-transform: none;
-  letter-spacing: unset;
+    text-transform: none;
+    letter-spacing: unset;
 }
 
 .resources h3 {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 .resources .accordion-section {
-  padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .resources .accordion-header .btn-show-hide {
-  border: 3px solid var(--fm-lightblue) !important;
+    border: 3px solid var(--fm-lightblue) !important;
 }
 
 .resources .accordion a {
-  font-size: 16px;
-  margin-bottom: 5px;
-  display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
 }
 
 /* News Pages */
 .news-title.font-title.font-bigger {
-  font-size: 20px;
-  color: var(--fm-blue);
-  font-weight: 500;
-  line-height: 25px;
+    font-size: 20px;
+    color: var(--fm-blue);
+    font-weight: 500;
+    line-height: 25px;
 }
 
 .list-news li {
-  margin: 40px 0px;
+    margin: 40px 0px;
 }
 
 .list-news-header li {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 .arrow-black::before {
-  top: 0.8em;
+    top: 0.8em;
 }
 
 #newsPage h1 {
-  text-transform: capitalize !important;
+    text-transform: capitalize !important;
 }
 
 .news-date {
-  color: #999;
+    color: #999;
 }
 
 #newsOverviewPage,
 #newsPage {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 #newsPage h2 {
-  font-size: 20px;
-  margin: 30px 0 20px 0;
+    font-size: 20px;
+    margin: 30px 0 20px 0;
 }
 
 .news-item-page figure {
-  margin: 0;
-  padding: 5px;
+    margin: 0;
+    padding: 5px;
 }
 
 .news-item-page figcaption {
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
 }
 
 .news-banner {
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 2px;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.2s;
 }
 
 .news-banner:hover {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
 .news-flex-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .news-flex-col a {
-  padding: 10px;
+    padding: 10px;
 }
 
 .news-flex-col a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .list-news li a {
-  display: inline;
+    display: inline;
 }
 
 .list-news .news-date {
-  display: block;
+    display: block;
 }
 
 #newsPage table td {
-  padding: 10px;
+    padding: 10px;
 }
 
 #newsPage table {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 /* Product list and search pages */
 .combined-description {
-  margin: 20px 0;
-  font-size: 18px;
-  line-height: 1.6;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .combined-description h2 {
-  text-transform: none;
-  font-weight: 700;
-  color: var(--fm-blue);
-  font-size: 24px;
-  margin-bottom: 12px;
+    text-transform: none;
+    font-weight: 700;
+    color: var(--fm-blue);
+    font-size: 24px;
+    margin-bottom: 12px;
 }
 
 .product-title {
-  color: var(--fm-blue);
+    color: var(--fm-blue);
 }
 
 .productlist-list-page .column-facets,
 .productlist-search-page .column-facets {
-  display: none;
+    display: none;
 }
 
 .productlist-list-page .combined-header {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .l-products-item,
@@ -170,143 +170,148 @@
 .l-products-item:before,
 .list-news li,
 .list-reviews li {
-  border-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .product-list-intro {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .product-list-intro .heading-lowercase {
-  font-size: 26px;
-  margin-bottom: 0;
+    font-size: 26px;
+    margin-bottom: 0;
 }
 
 /* Product details pages */
 .details-info h1 {
-  line-height: 1.6 !important;
-  padding-bottom: 0.3em;
-  text-transform: none !important;
+    line-height: 1.6 !important;
+    padding-bottom: 0.3em;
+    text-transform: none !important;
 }
 
 [itemprop="productID"],
 .product-id-value {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .has-aside {
-  border: none;
-  width: 100%;
+    border: none;
+    width: 100%;
 }
 
 .product-details-page aside {
-  display: block;
+    display: block;
 }
 
 .product-details-page .description {
-  font-size: 15px;
-  line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 #productPage .price-note {
-  background-color: #f8f8f8;
-  padding: 10px 20px;
-  border: 1px solid #eee;
-  border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
 }
 
 #productPage .hyp-print-preview {
-  color: var(--fm-blue) !important;
+    color: var(--fm-blue) !important;
 }
 
 .uk-site #productPage .after-prices {
-  display: none;
+    display: none;
 }
 
 .uk-site .lbl-price sup .vat {
-  margin-left: 10px;
-  color: #999;
-  font-size: 13px;
+    margin-left: 10px;
+    color: #999;
+    font-size: 13px;
 }
 
 .product-details-page .attachments .gvi-name-value .name {
-  width: 100%;
+    width: 100%;
 }
 
 #productPage div[itemprop="description"]::after {
-  content: "...";
+    content: "...";
 }
 
 /* Physiologix Landing Page */
 #phx-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 #phx-header * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #phx-header .phx-logo {
-  margin: 40px 0;
-  width: 450px;
-  max-width: 100%;
+    margin: 40px 0;
+    width: 450px;
+    max-width: 100%;
 }
 
 #phx-header .heading-wrap {
-  position: relative;
+    position: relative;
 }
 
 #phx-header .heading-wrap h2 {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
-  opacity: 0.6;
-  text-align: center;
-  font-size: 25px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 25px;
 }
 
 .categories.phx .category-hover-btn {
-  background-color: #15284c;
-  border-left: 5px solid #cb2245;
+    background-color: #15284c;
+    border-left: 5px solid #cb2245;
 }
 
 .categories.phx .border-effect {
-  background-color: #cb2245;
+    background-color: #cb2245;
 }
 
 /* Women's Heart Health */
 #whh-banner svg #heart {
-  transform-origin: center;
-  animation: beat 1.5s 0.5s infinite;
+    transform-origin: center;
+    animation: beat 1.5s 0.5s infinite;
 }
 
 @keyframes beat {
-  0% { transform: scale(1.00) }
-  95% { transform: scale(1.03) }
+    0% {
+        transform: scale(1.00)
+    }
+
+    95% {
+        transform: scale(1.03)
+    }
 }
 
 #whh-slider-wrap {
-  margin-top: 45px;
+    margin-top: 45px;
 }
 
 #whh-slider-wrap p {
-  padding: 15px;
-  text-align: center;
-  font-size: 18px;
-  cursor: grab;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    cursor: grab;
 }
 
 .tns-nav {
     text-align: center;
 }
 
-.tns-nav > [aria-controls] {
+.tns-nav>[aria-controls] {
     width: 9px;
     height: 9px;
     padding: 0;
@@ -316,26 +321,26 @@
     border: 0;
 }
 
-#whh-slider-wrap .tns-nav > .tns-nav-active {
+#whh-slider-wrap .tns-nav>.tns-nav-active {
     background: var(--ls-blue);
 }
 
-.tns-nav > [aria-controls]:focus {
-  outline: none;
+.tns-nav>[aria-controls]:focus {
+    outline: none;
 }
 
 @media (min-width: 768px) {
-  #phx-header .heading-wrap h2 {
-    font-size: 45px;
-  }
+    #phx-header .heading-wrap h2 {
+        font-size: 45px;
+    }
 
-  .categories.phx .category-link {
-    flex-basis: 49%;
-  }
+    .categories.phx .category-link {
+        flex-basis: 49%;
+    }
 }
 
 @media (min-width: 992px) {
-  #phx-header .heading-wrap h2 {
-    font-size: 65px;
-  }
+    #phx-header .heading-wrap h2 {
+        font-size: 65px;
+    }
 }

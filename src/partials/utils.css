@@ -1,0 +1,125 @@
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-ctr {
+    align-items: center;
+}
+
+.justify-ctr {
+    justify-content: center;
+}
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.txt-lg {
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+.txt-md {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.lowercase {
+    text-transform: none;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.blue {
+    color: var(--fm-blue);
+}
+
+.lightblue {
+    color: var(--fm-lightblue);
+}
+
+.bg-blue {
+    background-color: var(--fm-blue);
+}
+
+.bg-lightblue {
+    background-color: var(--fm-lightblue);
+}
+
+.white {
+    color: #ffffff;
+}
+
+.md-red {
+    color: var(--md-red);
+}
+
+.bg-md-red {
+    background-color: var(--md-red);
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-ctr {
+    background-position: center center;
+}
+
+.bbox {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .desktop-only {
+        display: initial;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+}

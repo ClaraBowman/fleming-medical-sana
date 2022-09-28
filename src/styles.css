@@ -9,6 +9,7 @@
 }
 
 /* Import all custom stylesheets */
+@import './partials/utils.css';
 @import './partials/about-us.css';
 @import './partials/categories.css';
 @import './partials/footer.css';
@@ -22,4 +23,3 @@
 @import './partials/profiles.css';
 @import './partials/sliders.css';
 @import './partials/steadysense.css';
-@import './partials/strip-banners.css';

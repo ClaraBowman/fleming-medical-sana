@@ -1,64 +1,69 @@
 /* Styling of engagebay forms. */
 
 .engagebay-forms {
-  display: flex;
-  padding: 0 !important;
-  justify-content: center;
-  border: 1px solid #eee;
-  border-left: 5px solid var(--fm-lightblue);
-  background-size: cover;
-  background-attachment: fixed;
+    display: flex;
+    padding: 0 !important;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-left: 5px solid var(--fm-lightblue);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .engagebay-forms .form {
-  padding: 0 !important;
-  margin: 0 !important;
-  font-family: "Nunito Sans" !important;
-  box-shadow: none;
-  background-color: transparent;
-  width: 500px;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: "Nunito Sans" !important;
+    box-shadow: none;
+    background-color: transparent;
+    width: 500px;
 }
 
 .engagebay-forms .form .form-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .engagebay-forms .form-group .control-label {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 .engagebay-forms select.form-control {
-  height: 37px;
+    height: 37px;
 }
 
 .engagebay-forms .form .form-group {
-  margin-bottom: 20px !important;
-  word-break: keep-all;
+    margin-bottom: 20px !important;
+    word-break: keep-all;
 }
 
 .engagebay-forms .form .submit-btn {
-  border: none;
-  color: #fff;
-  background-color: var(--fm-blue);
-  margin-top: 20px;
-  padding: 10px 15px;
-  border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: var(--fm-blue);
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .engagebay-forms .form .submit-btn:hover {
-  background-color: var(--fm-blue-trans);
+    background-color: var(--fm-blue-trans);
 }
 
 /* Needed to prevent chat widget from flickering on and off when it's disabled. Fades in otherwise */
 .ie-site .engagebay-messenger-frame {
-  animation: chatFade 5s;
+    animation: chatFade 5s;
 }
 
 @keyframes chatFade {
-  from { opacity: 0 }
-  to { opacity: 1 }
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .uk-site .engagebay-messenger-frame {
-  display: none;
+    display: none;
 }

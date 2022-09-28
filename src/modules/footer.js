@@ -37,24 +37,22 @@ function socialLinks() {
 }
 
 /**
- * Stockists Banner.
+ * Stockists Banner (Where To Find Us).
  */
 function whereToFindUs() {
   let ft = document.querySelector("footer");
 
   let stockistsEl = document.createElement("div");
 
-  stockistsEl.className += "stockists";
+  stockistsEl.id = 'stockists';
+
+  stockistsEl.classList.add('bg-lightblue');
 
   let stockistsMarkup = `
-    <div class="center">
-        <i class="fas fa-map-signs"></i>
-        <p>Looking for our products in store? View the map to find your nearest partner Pharmacy</p>
-        <a href="/where-to-find-us">
-            <i class="fas fa-map-marked-alt"></i>
-            <span>Map</span>
-            <span>Where to Buy</span>
-        </a>
+    <div class="center flex-ctr white txt-md">
+        <i class="fas fa-map-signs desktop-only" style="font-size: 22px; margin-right: 20px"></i>
+        <p>Looking for our products in store? <a class="mobile-only white underline fw-bold" href="/where-to-find-us">Click here</a><span class="desktop-only">View the map</span> to find your nearest partner Pharmacy</p>
+        <a class="cta-link desktop-only" href="/where-to-find-us"><i class="fas fa-map-marked-alt"></i>Where to Buy</a>  
     </div>
     `;
 

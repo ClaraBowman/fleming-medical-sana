@@ -1,50 +1,49 @@
 /* Styles for Medicare LifeSense. */
 
 .ls-bg-gradient {
-  background-image: linear-gradient(315deg, #d2e7f9, #f9f9f9, #eaf4fc);
-  background-repeat: no-repeat;
+    background-image: linear-gradient(315deg, #d2e7f9, #f9f9f9, #eaf4fc);
+    background-repeat: no-repeat;
 }
 
 /* Track, Learn, Perform landing page. */
 
 #tlp-banner {
-  text-align: center;
+    text-align: center;
 }
 
 #tlp-banner img {
-  width: 350px;
-  max-width: 85%;
-  margin-bottom: 40px;
+    width: 350px;
+    max-width: 85%;
+    margin-bottom: 40px;
 }
 
 #tlp-banner h1 {
-  font-size: 50px;
-  margin-bottom: 40px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 #tlp-banner p {
-  font-weight: 700;
-  font-size: 30px;
-  max-width: 700px;
-  color: #bbb;
-  margin: 0 auto;
-  line-height: 1.5em;
+    font-weight: 700;
+    font-size: 30px;
+    max-width: 700px;
+    color: #bbb;
+    margin: 0 auto;
+    line-height: 1.5em;
 }
 
 .h-lifesense {
-  width: 100%;
-  line-height: 1.5em;
-  text-transform: unset;
-  color: var(--ls-blue);
-  font-weight: 700;
+    width: 100%;
+    line-height: 1.5em;
+    text-transform: unset;
+    color: var(--ls-blue);
+    font-weight: 700;
 }
 
 h2.h-lifesense {
-  font-size: 30px;
-  margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .product-link-card:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
-

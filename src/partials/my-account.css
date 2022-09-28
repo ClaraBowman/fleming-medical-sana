@@ -1,64 +1,64 @@
 /* Styles controlling the sign-up and customer account pages */
 
 .card-acc-type {
-  position: relative;
-  background-image: linear-gradient(90deg, #f4f9fd, transparent);
-  border: 3px solid #6fb9e1;
-  border-radius: 30px;
-  padding: 35px;
-  min-height: 375px;
+    position: relative;
+    background-image: linear-gradient(90deg, #f4f9fd, transparent);
+    border: 3px solid #6fb9e1;
+    border-radius: 30px;
+    padding: 35px;
+    min-height: 375px;
 }
 
 .card-acc-type .num {
-  position: absolute;
-  top: -30px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #005598;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005598;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .card-acc-type #docusign {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 3px 20px 3px 10px;
-  color: white;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: #ff9955;
-  border-radius: 15px 25px 0 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 3px 20px 3px 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #ff9955;
+    border-radius: 15px 25px 0 15px;
 }
 
 .card-acc-type h3 {
-  font-weight: 700;
-  font-size: 18px;
-  color: #005598;
-  text-transform: unset;
-  letter-spacing: unset;
-  margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #005598;
+    text-transform: unset;
+    letter-spacing: unset;
+    margin-top: 20px;
 }
 
 .card-acc-type .acc-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 20%;
-  box-shadow: 2px 2px 0 #ddd;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  background-color: #ffffff;
-  color: #6fb9e1;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 20%;
+    box-shadow: 2px 2px 0 #ddd;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    color: #6fb9e1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-acc-type p {
@@ -68,86 +68,86 @@
 }
 
 .card-acc-type .fa-angle-double-right {
-  color: #6fb9e1;
-  margin-right: 5px;
+    color: #6fb9e1;
+    margin-right: 5px;
 }
 
 .card-acc-type .fa-check-circle {
-  color: #0eae0e;
-  margin-left: 5px;
+    color: #0eae0e;
+    margin-left: 5px;
 }
 
 .card-acc-type .cta-link {
-  position: absolute;
-  bottom: 130px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-acc-type img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -45px;
-  transition: all 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -45px;
+    transition: all 0.3s;
 }
 
-.card-acc-type a:hover + img {
-  bottom: -35px;
+.card-acc-type a:hover+img {
+    bottom: -35px;
 }
 
 #myAccountPage .account-top-actions {
-  display: none;
+    display: none;
 }
 
 #customer-resources-banner {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
-  margin: 0;
-  padding: 30px;
-  background-size: cover;
-  color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+    background-size: cover;
+    color: white;
 }
 
 #customer-resources-banner h3 {
-  text-transform: unset;
-  font-size: 27px;
-  font-weight: 700;
-  color: white;
-  line-height: 1.2em;
+    text-transform: unset;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2em;
 }
 
 #customer-resources-banner p {
-  font-size: 18px;
-  margin: 0;
+    font-size: 18px;
+    margin: 0;
 }
 
 #customer-resources-banner .fa-download {
-  font-size: 50px;
-  margin-left: 20px;
-  opacity: 0.8;
-  transition: opacity 0.3s;
+    font-size: 50px;
+    margin-left: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 }
 
 #customer-resources-banner:hover .fa-download {
-  opacity: 1;
+    opacity: 1;
 }
 
 #loginPage,
 #forgotPasswordPage,
 #createAccountPage {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 #loginPage h3,
 #createAccountPage h3 {
-  text-transform: none;
+    text-transform: none;
 }
 
 .gvi-totals-order-history:after {
@@ -155,63 +155,64 @@
 }
 
 #loginPage .semicolumn {
-  width: 100%;
+    width: 100%;
 }
 
 .product-to-return .row-comment {
-  display: none;
+    display: none;
 }
 
 .btn-profile-container {
-  margin: 2px 0px 5px;
+    margin: 2px 0px 5px;
 }
 
 .btn-profile-wrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .btn-profile {
-  margin-bottom: 2px;
-  flex-basis: 100%;
+    margin-bottom: 2px;
+    flex-basis: 100%;
 }
 
 .hyp-print-preview {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 /* Custom invoice footer */
 .profile-page-cnt .history-details::after {
-  background-image: url("https://www.flemingmedical.ie/content/files/images/invoice-footer-ireland-v1.svg");
-  padding: 0;
-  min-height: 120px;
-  margin: 10px 0;
+    background-image: url("https://www.flemingmedical.ie/content/files/images/invoice-footer-ireland-v1.svg");
+    padding: 0;
+    min-height: 120px;
+    margin: 10px 0;
 }
 
 @media screen and (min-width: 375px) {
-  .btn-profile {
-    flex-basis: 49%;
-  }
+    .btn-profile {
+        flex-basis: 49%;
+    }
 }
 
 @media screen and (min-width: 475px) {
-  .btn-profile {
-    flex-basis: 49.5%;
-  }
+    .btn-profile {
+        flex-basis: 49.5%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .btn-profile {
-    flex-basis: 32.5%;
-  }
+    .btn-profile {
+        flex-basis: 32.5%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  .btn-profile-container {
-    margin: 5px 0px;
-  }
-  .btn-profile {
-    flex-basis: 19.5%;
-  }
+    .btn-profile-container {
+        margin: 5px 0px;
+    }
+
+    .btn-profile {
+        flex-basis: 19.5%;
+    }
 }

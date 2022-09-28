@@ -2,52 +2,82 @@
 @import 'npm:tiny-slider/dist/tiny-slider.css';
 
 .tns-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
 }
 
 .tns-controls button {
-  background: transparent;
-  border: none;
-  color: var(--fm-lightblue);
-  font-size: 30px;
-  outline: none !important;
+    background: transparent;
+    border: none;
+    color: var(--fm-lightblue);
+    font-size: 30px;
+    outline: none !important;
 }
 
-.tns-nav > [aria-controls].tns-nav-active {
-  background-color: var(--fm-lightblue);
+.tns-nav>[aria-controls].tns-nav-active {
+    background-color: var(--fm-lightblue);
+}
+
+.product-slider a h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--fm-blue);
+    text-transform: unset;
+    padding-right: 10px;
+}
+
+.product-slider a:hover {
+    text-decoration: none;
+}
+
+.product-slider a:hover img {
+    transform: scale(1.05);
+}
+
+.product-slider .img-wrap {
+    overflow: hidden;
+}
+
+.product-slider a img {
+    transition: all 0.3s;
+}
+
+.product-slider a p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 10px 30px 0;
 }
 
 .quote-slider {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .quote-slider img {
-  padding: 5px;
-  background-color: #fff;
-  border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .quote-slider p {
-  margin: 0 0 0 40px;
-  font-weight: 700;
+    margin: 0 0 0 40px;
+    font-weight: 700;
 }
 
 .quote-slider .fa-quote-left,
 .quote-slider .fa-quote-right {
-  z-index: -1;
-  opacity: 0.2;
-  font-size: 40px;
+    z-index: -1;
+    opacity: 0.2;
+    font-size: 40px;
 }
 
 .quote-slider .fa-quote-left {
-  top: -16px;
-  left: -50px;
-  transform: scale(1,-1);
+    top: -16px;
+    left: -50px;
+    transform: scale(1, -1);
 }
 
 .quote-slider .fa-quote-right {
-  right: -48px;
-  bottom: -12px;
+    right: -48px;
+    bottom: -12px;
 }
