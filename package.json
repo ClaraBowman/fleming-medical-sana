@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/fleming-medical/fleming-medical-sana.git"
+    "url": "git+ssh://git@github.com:fleming-medical/fleming-medical-sana.git"
   },
   "author": "David Matthew",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/fleming-medical/fleming-medical-sana#readme",
+  "homepage": "https://github.com/fleming-medical/fleming-medical-sana",
   "devDependencies": {
     "parcel": "^2.0.1"
   },

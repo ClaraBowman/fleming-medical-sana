@@ -100,45 +100,6 @@
     display: none;
 }
 
-#customer-resources-banner {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    margin: 0;
-    padding: 30px;
-    background-size: cover;
-    color: white;
-}
-
-#customer-resources-banner h3 {
-    text-transform: unset;
-    font-size: 27px;
-    font-weight: 700;
-    color: white;
-    line-height: 1.2em;
-}
-
-#customer-resources-banner p {
-    font-size: 18px;
-    margin: 0;
-}
-
-#customer-resources-banner .fa-download {
-    font-size: 50px;
-    margin-left: 20px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-#customer-resources-banner:hover .fa-download {
-    opacity: 1;
-}
-
 #loginPage,
 #forgotPasswordPage,
 #createAccountPage {
