@@ -142,6 +142,11 @@
     color: #fff !important;
 }
 
+
+.column.border-simple-left {
+    border: none;
+}
+
 /* Custom invoice footer */
 .profile-page-cnt .history-details::after {
     background-image: url("https://www.flemingmedical.ie/content/files/images/invoice-footer-ireland-v1.svg");
