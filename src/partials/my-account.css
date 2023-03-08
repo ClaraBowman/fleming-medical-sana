@@ -1,4 +1,8 @@
 /* Styles controlling the sign-up and customer account pages */
+a.hyp-account.goto-returnorders,
+a.hyp-account.goto-returnreceipts {
+  display: none;
+}
 
 .card-acc-type {
     position: relative;
