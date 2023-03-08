@@ -1,4 +1,13 @@
 /* Site-wide general purpose CSS and helper classes */
+:root {
+    --fm-blue: #005598;
+    --fm-lightblue: #6fb9e1;
+    --fm-blue-trans: #005598bb;
+    --fm-lightblue-trans: #6fb9e1bb;
+    --ls-blue: #00a3e0;
+    --md-red: #da291c;
+}
+
 html {
     scroll-behavior: smooth;
 }
