@@ -1,5 +1,4 @@
 /* Styling of engagebay forms. */
-
 .engagebay-forms {
     display: flex;
     padding: 0 !important;
@@ -23,8 +22,18 @@
     padding: 20px;
 }
 
+.engagebay-forms h2 {
+    font-family: "Nunito Sans" !important;
+}
+  
+.eb-field-required-error {
+    color: red;
+}
+
 .engagebay-forms .form-group .control-label {
-    font-weight: 600 !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    display: inline !important;
 }
 
 .engagebay-forms select.form-control {
