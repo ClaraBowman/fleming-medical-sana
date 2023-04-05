@@ -114,7 +114,6 @@ a.no-decoration:hover {
 
 .overlay {
     z-index: 1;
-    opacity: 0.4;
     transition: opacity 0.3s;
 }
 

@@ -30,18 +30,6 @@ a.hyp-account.goto-returnreceipts {
     height: 50px;
 }
 
-.card-acc-type #docusign {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 3px 20px 3px 10px;
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: #ff9955;
-    border-radius: 15px 25px 0 15px;
-}
-
 .card-acc-type h3 {
     font-weight: 700;
     font-size: 18px;
