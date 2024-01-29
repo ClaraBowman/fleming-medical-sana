@@ -189,7 +189,7 @@
 .details-info h1 {
     line-height: 1.6 !important;
     padding-bottom: 0.3em;
-    text-transform: none !important;
+    /*text-transform: none !important;*/
 }
 
 [itemprop="productID"],
