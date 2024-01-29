@@ -18,6 +18,7 @@ function flagLinks() {
       <a class="hyp selected" href="/">
         <img src="/content/files/images/languages/flag-${isIrishSite() ? 'ie' : 'uk'}.svg" alt="Fleming Medical ${isIrishSite() ? 'IE' : 'UK'}" class="flag">Fleming Medical ${isIrishSite() ? 'IE' : 'UK'}
       </a>
+      
       <a href="https://www.flemingmedical.${isIrishSite() ? 'co.uk' : 'ie'}" class="hyp">
         <img src="/content/files/images/languages/flag-${isIrishSite() ? 'uk' : 'ie'}.svg" alt="Fleming Medical ${isIrishSite() ? 'UK' : 'IE'}" class="flag">Fleming Medical ${isIrishSite() ? 'UK' : 'IE'}
       </a>
