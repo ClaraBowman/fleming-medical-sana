@@ -16,6 +16,11 @@ body {
     color: #666;
 }
 
+/*Centre Nav Bar without Affecting Dropdown*/
+.nav-main{
+    margin-left: 4%;
+}
+
 /*Ben Frost Edits - 19.08.24*/
 div[data-id="SHL753"] .prices {
     display: none;
@@ -37,11 +42,6 @@ div[data-id="SHL753"] .prices {
 .h-100 {
     height: 100% !important;
 }
-
-.nav-list {
-    margin-left: 4%;
-}
-
 /*Ben Frost Edits - 19.08.24*/
 
 h1,
