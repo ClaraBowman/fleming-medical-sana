@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "clean": "rm -r dist/index.js"
+    "clean": "rm -r dist/"
   },
   "repository": {
     "type": "git",
