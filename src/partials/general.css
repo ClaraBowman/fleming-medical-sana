@@ -16,11 +16,6 @@ body {
     color: #666;
 }
 
-/*Node Test - 19.08.24*/
-#stockists {
-    background-color: red !important;
-}
-
 /*Ben Frost Edits - 19.08.24*/
 div[data-id="SHL753"] .prices {
     display: none;
