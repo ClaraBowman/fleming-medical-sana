@@ -16,8 +16,8 @@ body {
     color: #666;
 }
 
-/*Centre Nav Bar without Affecting Dropdown*/
-.nav-main{
+/*Centre Nav Bar without Affecting Dropdown Menu*/
+.nav-main {
     margin-left: 4%;
 }
 
@@ -42,6 +42,7 @@ div[data-id="SHL753"] .prices {
 .h-100 {
     height: 100% !important;
 }
+
 /*Ben Frost Edits - 19.08.24*/
 
 h1,
