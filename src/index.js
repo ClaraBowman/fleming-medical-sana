@@ -7,6 +7,7 @@ import engagebay from './modules/engagebay';
 document.addEventListener('DOMContentLoaded', () => {
     
     header.createAccountLinks();
+    header.newPortalLinks();
     header.flagLinks();
     header.addCountryClass();
     
