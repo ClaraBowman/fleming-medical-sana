@@ -76,6 +76,35 @@ function createAccountLinks() {
 }
 
 /**
+ * Update the create account links.
+ */
+function newPortalLinks() {  
+  // Only create the links if the customer isn't already logged in.
+  if (!isCstLoggedIn()) {
+    // The desktop links section.
+    let desktopLinks = document.querySelectorAll('.top-action');
+
+    // The links section on mobile.
+    let mobileLinks = document.querySelectorAll('.top-dropdown.login .summary');
+    
+    // Create the two links (they need to be distinct).
+    let desktopLink = document.createElement('a');
+    desktopLink.classList.add('top-hyp', 'font-smaller');
+    desktopLink.innerText = 'Login to NEW Ordering Portal';
+    desktopLink.href = 'https://shop.app4sales.net/Fleming/login.html';
+    let mobileLink = document.createElement('a');
+    mobileLink.classList.add('hyp');
+    mobileLink.innerText = 'Login to NEW Ordering Portal';
+    mobileLink.href = 'https://shop.app4sales.net/Fleming/login.html';
+
+    // Append the links for desktop and mobile.
+    desktopLinks[0].insertBefore(desktopLink, desktopLinks[0].childNodes[2]);
+    mobileLinks[0].insertBefore(mobileLink, mobileLinks[0].childNodes[1]);
+  }
+}
+
+
+/**
  * Fixes subcategory menu navigation issue on tablets.
  */
 function navFix() {
